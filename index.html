@@ -175,7 +175,35 @@ nav{
 }
 
 
+.menu-toggle{
+    display:none;
+    font-size:36px;
+    cursor:pointer;
+}
 
+@media (max-width:768px){
+
+.menu-toggle{
+    display:block;
+}
+
+.menu{
+    display:none;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+}
+
+.menu.active{
+    display:block;
+}
+
+.menu a{
+    display:block;
+    margin:15px 0;
+}
+
+}
     
     
 </style>
@@ -193,12 +221,16 @@ nav{
 
     <img src="logo.jpg" class="logo" alt="お家.com">
 
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">SERVICE</a>
-        <a href="#">ABOUT</a>
-        <a href="#">CONTACT</a>
-    </nav>
+<div class="menu-toggle">
+    ☰
+</div>
+
+<nav class="menu">
+    <a href="#">HOME</a>
+    <a href="#">SERVICE</a>
+    <a href="#">ABOUT</a>
+    <a href="#">CONTACT</a>
+</nav>
 
 </header>
 
@@ -236,5 +268,16 @@ nav{
 
 </section>
 
+
+    <script>
+
+const toggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+</script>
 </body>
 </html>
