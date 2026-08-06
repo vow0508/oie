@@ -1,640 +1,82 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>思想 | お家.com</title>
 
-<style>
+<title>思想・理念 | お家.com</title>
 
+<meta name="description"
+content="お家.comの思想・理念をご紹介します。情熱・誠実・一期一会を大切に、お客様の住まい選びを全力でサポートします。">
 
-body
-
-
-{
-    margin:0;
-    font-family: "Yu Gothic","Meiryo",sans-serif;
-    background:#ffffff;
-    text-align:center;
-}
-
-.hero{
-    max-width:1200px;
-    margin:auto;
-    min-height:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    padding:60px;
-}
-
-.hero-text{
-    flex:1;
-    text-align:left;
-}
-
-.hero-text h1{
-    font-size:50px;
-    line-height:1.3;
-    margin-bottom:25px;
-}
-
-.hero-text p{
-    font-size:22px;
-    color:#666;
-    line-height:1.8;
-}
-
-.hero-image{
-    flex:1;
-}
-
-
-  .hero-image img{
-    width:100%;
-    border-radius:20px;
-    box-shadow:0 12px 30px rgba(0,0,0,.18);
-
-}
-
-
-
-h1{
-    font-size:70px;
-    margin:0;
-}
-
-p{
-    font-size:28px;
-    color:#666;
-}
-
-
-
-    
-header img{
-    width:180px;
-    display:block;
-    margin-top:50px;
-    margin-left:40px;
-}
- 
-
- 
-
-
-nav a{
-    margin-left:35px;
-    text-decoration:none;
-    color:#333;
-    font-weight:600;
-}
-
-
-header{
-    max-width:1100px;
-    margin:30px auto 0;
-    padding:0 20px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-}
-
-.logo{
-    width:170px;
-}
-
-nav{
-    padding-top:70px;
-}
-
-
-.btn{
-    display:inline-block;
-    margin-top:40px;
-    padding:20px 48px;
-    background:#1b7f3b;
-    color:#fff;
-    text-decoration:none;
-    border-radius:40px;
-    font-size:22px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#14642e;
-}
-
-
-@media (max-width:768px){
-
-
-.hero-text{
-    text-align:left;
-}
-
-.hero-text p{
-    text-align:left;
-}
-
-
-    
-
-header{
-    flex-direction:column;
-    align-items:center;
-    padding:20px;
-}
-
-nav{
-    padding-top:20px;
-}
-
-.hero{
-    flex-direction:column;
-    padding:30px 20px;
-    gap:30px;
-}
-
-.hero-text{
-    order:2;
-    text-align:center;
-}
-
-.hero-image{
-    order:1;
-}
-
-.hero-text h1{
-    font-size:30px;
-}
-
-.hero-text p{
-    font-size:18px;
-}
-
-.hero-image img{
-    width:100%;
-}
-
-.btn{
-    display:inline-block;
-    width:260px;
-    padding:18px 0;
-    border-radius:50px;
-    font-size:28px;
-    font-weight:bold;
-    margin-top:30px;
-}
-
-
-    
-}
-
-
-.menu-toggle{
-    display:none;
-    font-size:36px;
-    cursor:pointer;
-}
-
-@media (max-width:768px){
-
-.menu-toggle{
-    display:block;
-}
-
-.menu{
-    display:none;
-    width:100%;
-    text-align:center;
-    margin-top:20px;
-}
-
-.menu.active{
-    display:block;
-}
-
-.menu a{
-    display:block;
-    margin:15px 0;
-}
-
-}
-    
-
-@media (max-width:768px){
-
-header{
-    display:grid;
-    grid-template-columns:1fr auto;
-    align-items:center;
-    padding:20px;
-}
-
-.logo{
-    width:160px;
-}
-
-.menu-toggle{
-    justify-self:end;
-    font-size:34px;
-}
-
-}
-
-header{
-    padding:10px 20px;
-}
-
-    .logo{
-    width:160px;
-    margin:0;
-}
-
-.inspection{
-    width:100%;
-    text-align:center;
-}
-
-.inspection img{
-    width:100%;
-    max-width:900px;
-    height:auto;
-    margin:auto;
-}
-
-
-.inspection-check{
-    padding:60px 20px;
-    background:#ffffff;
-}
-
-.inspection-check .container{
-    max-width:900px;
-    margin:auto;
-}
-
-.inspection-check h2{
-    color:#0b3a77;
-    font-size:20px;
-    text-align:center;
-    margin-bottom:10px;
-}
-
-.inspection-check h3{
-    font-size:34px;
-    text-align:center;
-    margin-bottom:25px;
-    font-weight:bold;
-}
-
-.inspection-photo{
-    width:100%;
-    max-width:700px;
-    display:block;
-    margin:0 auto 30px;
-    border-radius:12px;
-}
-
-.lead{
-    font-size:22px;
-    font-weight:bold;
-    text-align:center;
-    margin-bottom:20px;
-}
-
-.inspection-check p{
-    line-height:1.9;
-    font-size:18px;
-}
-
-.check-list{
-    margin:30px 0;
-    padding-left:20px;
-}
-
-.check-list li{
-    margin-bottom:12px;
-    font-size:18px;
-}
-
-.note{
-    font-size:14px;
-    color:#666;
-}
-
-
-
-
-.check-list{
-    list-style: none;
-    padding-left: 0;
-    margin: 30px 0;
-}
-
-.inspection-photo{
-    width:100%;
-    max-width:500px;
-    display:block;
-    margin:30px auto;
-    border-radius:12px;
-}
-
-.check-list li{
-    color:#0b3a77;
-    font-weight:bold;
-    font-size:20px;
-    margin:15px 0;
-}
-
-
-/* ←これを追加 */
-.check-list li,
-.check-list li a {
-    color: #0b3a77;
-    text-decoration: none;
-}
-
-
-.inspection-photo{
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-    transition:.3s;
-}
-
-.inspection-photo:hover{
-    transform:scale(1.03);
-}
-
-
-.check-list{
-    list-style: none;
-    padding: 0;
-    margin: 30px auto;
-    width: fit-content;
-    text-align: left;
-}
-
-.check-list li{
-    margin: 15px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #0b3d91;
-}
-
-.note{
-    font-size:0.95rem;
-    color:#666;
-    font-weight:bold;
-}
-
-
-
-.measurement-box{
-    max-width:420px;
-    margin:40px auto;
-    padding:35px 20px;
-    background:#0b2d63;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-}
-
-.measurement-title{
-    color:#ffffff;
-    font-size:24px;
-    font-weight:bold;
-    margin-bottom:20px;
-}
-
-.measurement-label{
-    color:#ffffff;
-    font-size:36px;
-    font-weight:900;
-    margin-bottom:20px;
-}
-
-.measurement-number{
-    color:#ffd700;      /* 金色 */
-    font-size:80px;
-    font-weight:900;
-    line-height:1;
-    margin:0;
-    text-shadow:2px 2px 6px rgba(0,0,0,.4);
-}
-
-.measurement-number span{
-    color:#ffffff;
-    font-size:40px;
-}
-
-
-.danger-list{
-    list-style: none;
-    padding: 0;
-    margin: 30px auto;
-    width: fit-content;
-    text-align: left;
-}
-
-.danger-list li{
-    list-style: none;
-    margin: 12px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-}
-
-
-
-.responsive-img{
-    width:100%;
-    max-width:1200px;
-    height:auto;
-    display:block;
-    margin:40px auto;
-    border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
-}
-
-
-
-.container{
-    width:90%;
-    max-width:1100px;
-    margin:auto;
-}
-
-
-.idea-section{
-    max-width:760px;
-    margin:80px auto;
-}
-
-
-.idea-section p{
-    line-height:2.2;
-}
-
-
-.idea-section h2{
-    color:#0b3a77;
-}
-
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:125px 20px;
-}
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:35px 20px;
-}
-
-
-
-
-<div class="idea-image">
-    <img src="idea1.png" class="responsive-img">
-</div>
-
-<div class="idea-text">
-    <h2>私たちの原動力は、「情熱」です。</h2>
-
-    <p>・・・・・・</p>
-</div>
-
-
-/* スマホ */
-@media (max-width:768px){
-
-h1{
-    font-size:42px;
-}
-
-h2{
-    font-size:28px;
-}
-
-h3{
-    font-size:22px;
-}
-
-p{
-    font-size:18px;
-    line-height:1.8;
-    color:#444;
-}
-
-@media (max-width:768px){
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
-}
-
-.logo{
-    width:160px;
-    margin:0;
-}
-
-.menu-toggle{
-    display:block;
-    font-size:34px;
-    cursor:pointer;
-}
-
-nav.menu{
-    display:none;
-}
-
-nav.menu.active{
-    display:block;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-    
-    
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-
-
-
-
+<!-- ========================================= -->
+<!-- HEADER -->
+<!-- ========================================= -->
 
 <header>
 
-<a href="index.html">
-    <img src="logo.jpg" class="logo" alt="お家.com">
-</a>
+    <a href="index.html">
 
-<div class="menu-toggle">
-    ☰
-</div>
+        <img src="logo.jpg"
+             alt="お家.com"
+             class="logo">
 
-<nav class="menu">
-    <a href="index.html">HOME</a>
-    <a href="#">SERVICE</a>
-    <a href="company.html">ABOUT</a>
-    <a href="#">CONTACT</a>
-</nav>
+    </a>
+
+    <div class="menu-toggle">
+
+        ☰
+
+    </div>
+
+    <nav class="menu">
+
+        <a href="index.html">HOME</a>
+
+        <a href="#">SERVICE</a>
+
+        <a href="company.html">ABOUT</a>
+
+        <a href="idea.html">IDEA</a>
+
+        <a href="https://forms.gle/HyXmBgncGQmBEbbC8">
+            CONTACT
+        </a>
+
+    </nav>
 
 </header>
 
 
+
 <!-- ========================================= -->
-<!-- IDEA（思想・理念） -->
+<!-- IDEA -->
 <!-- ========================================= -->
 
 <section class="idea">
 
-<div class="container">
+    <div class="container">
 
-<h1>IDEA</h1>
+        <h1>IDEA</h1>
 
-<p class="sub-title">
-私たちの思想・理念
-</p>
+        <p class="sub-title">
 
-</div>
+            私たちの思想・理念
+
+        </p>
+
+    </div>
 
 </section>
-
 
 
 <!-- ========================================= -->
@@ -644,31 +86,52 @@ nav.menu.active{
 <section class="idea-section">
 
     <div class="idea-image">
+
         <img src="idea11.png"
              alt="私たちの原動力は情熱です"
              class="responsive-img">
+
     </div>
 
     <div class="idea-text">
 
-        <h2>私たちの原動力は、「情熱」です。</h2>
+        <h2>
 
-        <p>私たちがお伝えしたいのは、単なる物件情報だけではありません。</p>
+            私たちの原動力は、「情熱」です。
 
-        <p>仕事に対する「情熱」を、お客様にお伝えすることです。</p>
+        </h2>
 
-        <p>利益だけを追い求めるのではなく、十分な実務経験と知識をもとに、他社には真似のできないサービスを提供すること。</p>
+        <p>
+            私たちがお伝えしたいのは、
+            単なる物件情報だけではありません。
+        </p>
 
-        <p>そして、お客様主導の住まい探しを、全力でサポートすること。</p>
+        <p>
+            仕事に対する「情熱」を、
+            お客様にお伝えすることです。
+        </p>
 
-        <p>それが、私たちの使命です。</p>
+        <p>
+            利益だけを追い求めるのではなく、
+            十分な実務経験と知識をもとに、
+            他社には真似のできないサービスを
+            提供すること。
+        </p>
+
+        <p>
+            そして、
+            お客様主導の住まい探しを、
+            全力でサポートすること。
+        </p>
+
+        <p>
+            それが、
+            私たちの使命です。
+        </p>
 
     </div>
 
 </section>
-
-
-
 <!-- ========================================= -->
 <!-- 約束 -->
 <!-- ========================================= -->
@@ -676,33 +139,62 @@ nav.menu.active{
 <section class="idea-section">
 
     <div class="idea-image">
+
         <img src="idea.png"
              alt="100回笑顔で応えます"
              class="responsive-img">
+
     </div>
 
     <div class="idea-text">
 
-        <h2>たとえ100回、同じ質問をされたとしても。</h2>
+        <h2>
 
-        <h2>100回、笑顔で応えます。</h2>
+            たとえ100回、
+            同じ質問をされたとしても。
 
-        <p>みなさんは、「不動産業者」と聞くと、どんなイメージを思い描きますか。</p>
+        </h2>
 
-        <p>住宅購入は、人生で何度も経験するものではありません。</p>
+        <h3>
 
-        <p>だからこそ、疑問や不安があるのは当然です。</p>
+            100回、笑顔で応えます。
 
-        <p>どんな小さなことでも、何度でもご相談ください。</p>
+        </h3>
 
-        <p>100回でも、笑顔でお応えします。</p>
+        <p>
+            みなさんは、
+            「不動産業者」と聞くと、
+            どんなイメージを思い描きますか。
+        </p>
 
-        <p>これが、私たちの約束です。</p>
+        <p>
+            住宅購入は、
+            人生で何度も経験するものではありません。
+        </p>
+
+        <p>
+            だからこそ、
+            疑問や不安があるのは当然です。
+        </p>
+
+        <p>
+            どんな小さなことでも、
+            何度でもご相談ください。
+        </p>
+
+        <p>
+            私たちは、
+            100回でも笑顔でお応えします。
+        </p>
+
+        <p>
+            これが、
+            私たちの約束です。
+        </p>
 
     </div>
 
 </section>
-
 
 <!-- ========================================= -->
 <!-- 一期一会 -->
@@ -711,129 +203,146 @@ nav.menu.active{
 <section class="idea-section">
 
     <div class="idea-image">
+
         <img src="idea3.png"
              alt="一期一会"
              class="responsive-img">
+
     </div>
 
     <div class="idea-text">
 
-        <h2>一期一会のご縁を大切に。</h2>
+        <h2>
 
-        <p>茶道には「一期一会」という言葉があります。</p>
+            一期一会のご縁を大切に。
 
-        <p>この出会いは、一生に一度のご縁。</p>
+        </h2>
 
-        <p>インターネットには数え切れないほどのホームページがあります。</p>
+        <p>
+            茶道には
+            「一期一会」
+            という言葉があります。
+        </p>
 
-        <p>その中で、私たちのホームページをご覧いただいたこと。</p>
+        <p>
+            この出会いは、
+            一生に一度のご縁。
+        </p>
 
-        <p>お問い合わせをいただいたこと。</p>
+        <p>
+            インターネットには
+            数え切れないほどのホームページがあります。
+        </p>
 
-        <p>それは偶然ではなく、大切なご縁だと考えています。</p>
+        <p>
+            その中で、
+            私たちのホームページをご覧いただいたこと。
+        </p>
 
-        <p>たった一通のメールでも、一本のお電話でも。</p>
+        <p>
+            お問い合わせをいただいたこと。
+        </p>
 
-        <p>私たちは、その出会いを大切にし、今できる最高のサービスを提供したいと思っています。</p>
+        <p>
+            それは偶然ではなく、
+            大切なご縁だと考えています。
+        </p>
+
+        <p>
+            たった一通のメールでも、
+            一本のお電話でも。
+        </p>
+
+        <p>
+            私たちは、
+            その出会いを大切にし、
+            今できる最高のサービスを提供したいと思っています。
+        </p>
 
     </div>
 
 </section>
 
+
 <!-- ========================================= -->
-<!-- 最後 -->
+<!-- 私たちの願い -->
 <!-- ========================================= -->
 
 <section class="idea-last">
 
-<div class="container">
+    <div class="container">
 
-<h2>
+        <h2>
 
-私たちの願い
+            私たちの願い
 
-</h2>
+        </h2>
 
-<p>
+        <p>
+            住まいは、
+            家族の幸せを支える場所です。
+        </p>
 
-住まいは、
-家族の幸せを支える場所です。
+        <p>
+            だからこそ、
+            私たちは売ることを目的にするのではなく、
+        </p>
 
-</p>
+        <h3>
 
-<p>
+            「相談して良かった。」
 
-だからこそ、
-私たちは売ることを目的にするのではなく、
+        </h3>
 
-</p>
+        <p>
+            そう思っていただける仕事を
+            目指しています。
+        </p>
 
-<h3>
+        <h2>
 
-「相談して良かった。」
+            情熱を持って。<br>
+            誠実に。<br>
+            一期一会を大切に。
 
-</h3>
+        </h2>
 
-<p>
+        <p>
 
-そう思っていただける仕事を
-目指しています。
+            それが、
+            お家.com の理念です。
 
-</p>
+        </p>
 
-<h2>
-
-情熱を持って。<br>
-誠実に。<br>
-一期一会を大切に。
-
-</h2>
-
-<p>
-
-それが、
-お家.com の理念です。
-
-</p>
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+
+            © 2026 お家.com All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
 
 
+<!-- ========================================= -->
+<!-- JavaScript -->
+<!-- ========================================= -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
+<script>
 
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
@@ -843,6 +352,6 @@ toggle.addEventListener("click", () => {
 });
 
 </script>
-    
+
 </body>
-</html>
+</html>    
