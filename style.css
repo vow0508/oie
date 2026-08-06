@@ -1,0 +1,1015 @@
+/*==================================================
+  お家.com
+  style.css Version 2
+==================================================*/
+
+
+/*==================================================
+  RESET
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/*==================================================
+  BODY
+==================================================*/
+
+body{
+
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    font-size:18px;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+  CONTAINER
+==================================================*/
+
+.container{
+
+    width:90%;
+    max-width:1100px;
+    margin:0 auto;
+
+}
+
+
+/*==================================================
+  IMAGE
+==================================================*/
+
+img{
+
+    display:block;
+    max-width:100%;
+    height:auto;
+
+}
+
+.responsive-img{
+
+    width:100%;
+    max-width:1100px;
+    margin:40px auto;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+/*==================================================
+  LINK
+==================================================*/
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+
+}
+
+
+/*==================================================
+  HEADER
+==================================================*/
+
+header{
+
+    max-width:1100px;
+
+    margin:20px auto;
+
+    padding:10px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+/*==================================================
+  LOGO
+==================================================*/
+
+.logo{
+
+    width:170px;
+
+}
+
+
+/*==================================================
+  NAVIGATION
+==================================================*/
+
+.menu{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+.menu a{
+
+    color:#333;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#0b3a77;
+
+}
+
+
+/*==================================================
+  HAMBURGER
+==================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
+
+
+/*==================================================
+  BUTTON
+==================================================*/
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    background:#18853d;
+
+    color:#fff;
+
+    font-weight:bold;
+
+    font-size:20px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#11662d;
+
+}
+
+
+/*==================================================
+  TYPOGRAPHY
+==================================================*/
+
+h1{
+
+    font-size:58px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    font-size:34px;
+
+    color:#0b3a77;
+
+    margin-bottom:25px;
+
+}
+
+h3{
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#444;
+
+    margin-bottom:24px;
+
+}
+
+
+
+/*==================================================
+  HERO
+==================================================*/
+
+.hero{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:60px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+/*==================================================
+  IDEA
+==================================================*/
+
+.idea{
+
+    padding:70px 20px 40px;
+
+    text-align:center;
+
+}
+
+.idea .sub-title{
+
+    font-size:20px;
+
+    color:#777;
+
+}
+
+
+/*==================================================
+  IDEA SECTION
+==================================================*/
+
+.idea-section{
+
+    padding:70px 0;
+
+}
+
+.idea-image{
+
+    max-width:1100px;
+
+    margin:0 auto 50px;
+
+}
+
+.idea-text{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+    text-align:left;
+
+}
+
+.idea-text h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.idea-text h3{
+
+    text-align:center;
+
+    color:#0b3a77;
+
+    margin-bottom:30px;
+
+}
+
+.idea-text p{
+
+    font-size:18px;
+
+    line-height:2.1;
+
+    color:#444;
+
+    margin-bottom:24px;
+
+}
+
+
+/*==================================================
+  IDEA LAST
+==================================================*/
+
+.idea-last{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.idea-last h2{
+
+    margin-bottom:30px;
+
+}
+
+.idea-last h3{
+
+    color:#0b3a77;
+
+    font-size:32px;
+
+    margin:35px 0;
+
+}
+
+.idea-last p{
+
+    max-width:760px;
+
+    margin:0 auto 24px;
+
+    line-height:2;
+
+}
+
+
+
+
+/*==================================================
+  COMPANY
+==================================================*/
+
+.company{
+
+    max-width:760px;
+
+    margin:80px auto;
+
+    padding:0 20px;
+
+}
+
+.company h1{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.company h2{
+
+    font-size:18px;
+
+    color:#888;
+
+    margin-top:35px;
+
+    margin-bottom:10px;
+
+}
+
+.company p{
+
+    font-size:18px;
+
+    color:#333;
+
+    line-height:1.9;
+
+}
+
+.company hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:30px 0;
+
+}
+
+
+/*==================================================
+  INSPECTION
+==================================================*/
+
+.inspection{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.inspection-check{
+
+    padding:80px 20px;
+
+}
+
+.inspection-check .container{
+
+    max-width:900px;
+
+}
+
+.inspection-check h2{
+
+    font-size:22px;
+
+    color:#0b3a77;
+
+    text-align:center;
+
+}
+
+.inspection-check h3{
+
+    font-size:36px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.inspection-photo{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.inspection-photo:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/*==================================================
+  CHECK LIST
+==================================================*/
+
+.check-list{
+
+    list-style:none;
+
+    width:fit-content;
+
+    margin:40px auto;
+
+    padding:0;
+
+    text-align:left;
+
+}
+
+.check-list li{
+
+    margin:15px 0;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#0b3a77;
+
+}
+
+
+/*==================================================
+  NOTE
+==================================================*/
+
+.note{
+
+    font-size:15px;
+
+    color:#666;
+
+}
+
+
+/*==================================================
+  MEASUREMENT BOX
+==================================================*/
+
+.measurement-box{
+
+    max-width:450px;
+
+    margin:50px auto;
+
+    padding:40px 20px;
+
+    background:#0b2d63;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+.measurement-title{
+
+    color:#fff;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.measurement-label{
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+.measurement-number{
+
+    color:#ffd700;
+
+    font-size:82px;
+
+    font-weight:900;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+.measurement-number span{
+
+    color:#fff;
+
+    font-size:40px;
+
+}
+
+
+/*==================================================
+  DANGER LIST
+==================================================*/
+
+.danger-list{
+
+    list-style:none;
+
+    width:fit-content;
+
+    margin:40px auto;
+
+    padding:0;
+
+    text-align:left;
+
+}
+
+.danger-list li{
+
+    margin:15px 0;
+
+    font-size:20px;
+
+}
+
+
+/*==================================================
+  FOOTER
+==================================================*/
+
+footer{
+
+    background:#0b3a77;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    margin-top:80px;
+
+}
+
+footer p{
+
+    color:#fff;
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
+
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*-------------------------------
+  HEADER
+-------------------------------*/
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 20px;
+
+}
+
+.logo{
+
+    width:140px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
+
+.menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    text-align:center;
+
+    padding:20px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.menu.active{
+
+    display:block;
+
+}
+
+.menu a{
+
+    display:block;
+
+    padding:15px 0;
+
+    margin:0;
+
+}
+
+/*-------------------------------
+  HERO
+-------------------------------*/
+
+.hero{
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:40px 20px;
+
+}
+
+.hero-text{
+
+    order:2;
+
+    text-align:left;
+
+}
+
+.hero-image{
+
+    order:1;
+
+}
+
+/*-------------------------------
+  TYPOGRAPHY
+-------------------------------*/
+
+h1{
+
+    font-size:40px;
+
+}
+
+h2{
+
+    font-size:28px;
+
+}
+
+h3{
+
+    font-size:22px;
+
+}
+
+p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/*-------------------------------
+  IDEA
+-------------------------------*/
+
+.idea{
+
+    padding:40px 20px;
+
+}
+
+.idea .sub-title{
+
+    font-size:18px;
+
+}
+
+.idea-image{
+
+    margin-bottom:30px;
+
+}
+
+.idea-text{
+
+    max-width:100%;
+
+    padding:0 18px;
+
+}
+
+.idea-text h2{
+
+    font-size:28px;
+
+}
+
+.idea-text h3{
+
+    font-size:22px;
+
+}
+
+.idea-text p{
+
+    font-size:17px;
+
+    line-height:2;
+
+}
+
+/*-------------------------------
+  COMPANY
+-------------------------------*/
+
+.company{
+
+    max-width:100%;
+
+    padding:0 20px;
+
+}
+
+.company h2{
+
+    font-size:17px;
+
+}
+
+.company p{
+
+    font-size:17px;
+
+}
+
+/*-------------------------------
+  INSPECTION
+-------------------------------*/
+
+.inspection-check{
+
+    padding:50px 20px;
+
+}
+
+.inspection-check h2{
+
+    font-size:20px;
+
+}
+
+.inspection-check h3{
+
+    font-size:28px;
+
+}
+
+.inspection-photo{
+
+    max-width:100%;
+
+}
+
+.check-list{
+
+    width:100%;
+
+}
+
+.check-list li{
+
+    font-size:18px;
+
+}
+
+.measurement-box{
+
+    max-width:100%;
+
+}
+
+.measurement-title{
+
+    font-size:20px;
+
+}
+
+.measurement-label{
+
+    font-size:28px;
+
+}
+
+.measurement-number{
+
+    font-size:60px;
+
+}
+
+.measurement-number span{
+
+    font-size:30px;
+
+}
+
+.danger-list{
+
+    width:100%;
+
+}
+
+.danger-list li{
+
+    font-size:18px;
+
+}
+
+footer{
+
+    padding:35px 20px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
