@@ -1241,9 +1241,24 @@ SERVICE
 }
 
 
+.service{
 
+    padding:80px 20px;
 
+}
 
+.service .container{
+
+    max-width:900px;
+    margin:0 auto;
+
+}
+
+.service .container{
+
+    max-width:760px;
+
+}
 
 
 
