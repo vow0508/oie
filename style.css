@@ -1482,3 +1482,34 @@ SERVICE
 .service-photo {
     margin: 30px auto;
 }
+/*==================================================
+  SERVICE 強制中央配置（重複解消コード）
+==================================================*/
+
+.service,
+.service .container,
+.service-box {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.service h1,
+.service .sub-title,
+.service h2,
+.service .arrow {
+    text-align: center !important;
+}
+
+.service-photo {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.service-list {
+    display: inline-block !important;
+    text-align: left !important; /* チェックリストの頭を揃えて画面中央に配置 */
+    margin: 0 auto 40px !important;
+    padding: 0 !important;
+}
