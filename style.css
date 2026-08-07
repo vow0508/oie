@@ -1281,7 +1281,34 @@ SERVICE
         font-size:16px;
     }
 }
+.service-box{
+    max-width:900px;
+    margin:70px auto;
+}
 
+.service-box img{
+    display:block;
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+    border-radius:12px;
+}
+
+.service-box ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+}
+
+.service-box li{
+    line-height:2;
+    font-size:18px;
+}
+
+.arrow{
+    font-size:20px;
+    line-height:1.8;
+}
 
 
 
