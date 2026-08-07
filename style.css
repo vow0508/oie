@@ -1301,6 +1301,26 @@ SERVICE
 }
 
 }
+.service-text{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:25px;
+    text-align:center;
+}
 
+.service-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 60px 0;
+    text-align:center;
+}
 
+.service-list li{
+    font-size:18px;
+    line-height:2;
+    padding-left:0;
+}
 
+.service .container{
+    text-align:center;
+}
