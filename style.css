@@ -1187,67 +1187,91 @@ SERVICE
 
 }
 
-.service-box{
+/*=========================
+SERVICE
+=========================*/
 
-    max-width:850px;
-    margin:0 auto 80px;
+.service{
+
+    width:90%;
+    max-width:900px;
+
+    margin:80px auto;
 
 }
 
-.service-box h2{
+.service h1{
 
-    font-size:32px;
+    text-align:center;
+    font-size:56px;
+
+    margin-bottom:10px;
+
+}
+
+.sub-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    color:#666;
+
+}
+
+.service h2{
+
+    color:#003b82;
+
+    margin-top:70px;
+
     margin-bottom:20px;
 
 }
 
-.service-box img{
+.service img{
 
     display:block;
+
     width:100%;
-    max-width:700px;
-    margin:25px auto;
-    border-radius:15px;
+
+    max-width:750px;
+
+    margin:30px auto;
+
+    border-radius:12px;
 
 }
 
 .arrow{
 
     font-size:20px;
-    font-weight:bold;
-    color:#0b5394;
-    margin:25px 0;
+
+    margin:20px 0;
 
 }
 
-.service-box ul{
+.service ul{
 
-    list-style:none;
-    padding:0;
+    margin:20px 0 50px 25px;
 
 }
 
-.service-box li{
+.service li{
 
-    font-size:20px;
     line-height:2;
 
+    font-size:18px;
+
 }
 
+.service hr{
 
-.service{
-    padding:80px 0;
-}
+    margin:70px 0;
 
-.service-box{
-     max-width:800px;
-    margin:80px auto;
-    text-align:left;
-}
+    border:none;
 
-.service article{
-
-    margin-bottom:80px;
+    border-top:1px solid #ddd;
 
 }
 
