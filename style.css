@@ -1209,7 +1209,13 @@ SERVICE
     margin:0 auto;
 }
 
-
+body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    font-size:18px;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+}
 
 
 
