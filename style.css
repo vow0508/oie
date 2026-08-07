@@ -1460,3 +1460,25 @@ SERVICE
         font-size:16px;
     }
 }
+
+  /*==================================================
+  SERVICE ページのど真ん中配置（追加コード）
+==================================================*/
+
+.service .container {
+    text-align: center;
+}
+
+.service-box {
+    text-align: center;
+}
+
+.service-list {
+    display: inline-block;
+    text-align: left; /* チェックリストの文字頭は揃えて真ん中に配置 */
+    margin: 0 auto 30px;
+}
+
+.service-photo {
+    margin: 30px auto;
+}
