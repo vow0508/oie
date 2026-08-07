@@ -1324,3 +1324,30 @@ SERVICE
 .service .container{
     text-align:center;
 }
+
+
+
+
+  body{
+    font-family:"Yu Gothic","Meiryo",sans-serif;
+    font-size:18px;
+    color:#333;
+    background:#fff;
+    line-height:1.8;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;   /* 全体を中央配置 */
+
+
+    header,
+footer{
+    width:100%;
+}
+
+.service{
+    width:100%;
+    max-width:900px;
+    margin:80px auto;
+}
+}
