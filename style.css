@@ -1347,10 +1347,9 @@ SERVICE
 /*==========================
 SERVICE
 ==========================*/
-
-/*=========================
- SERVICE
-=========================*/
+/*==================================================
+  SERVICE
+==================================================*/
 
 .service{
     padding:80px 0;
@@ -1362,15 +1361,27 @@ SERVICE
     margin:0 auto;
 }
 
+.service h1{
+    text-align:center;
+    color:#003b82;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.service .sub-title{
+    text-align:center;
+    color:#777;
+    margin-bottom:60px;
+}
+
 .service-box{
     margin:70px 0;
 }
 
-.service h1,
-.service .sub-title,
-.service h2,
-.arrow{
+.service h2{
     text-align:center;
+    color:#003b82;
+    margin-bottom:25px;
 }
 
 .service-photo{
@@ -1381,14 +1392,44 @@ SERVICE
     border-radius:12px;
 }
 
+.arrow{
+    text-align:center;
+    margin-bottom:20px;
+}
+
 .service-list{
+    list-style:none;
     width:fit-content;
     margin:0 auto;
     padding:0;
-    list-style:none;
     text-align:left;
 }
 
+.service-list li{
+    line-height:2;
+}
+
 .service hr{
+    border:none;
+    border-top:1px solid #ddd;
     margin:70px 0;
+}
+
+@media (max-width:768px){
+
+    .service{
+        padding:40px 0;
+    }
+
+    .service h1{
+        font-size:36px;
+    }
+
+    .service h2{
+        font-size:28px;
+    }
+
+    .service-photo{
+        max-width:100%;
+    }
 }
