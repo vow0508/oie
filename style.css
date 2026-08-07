@@ -1344,5 +1344,65 @@ SERVICE
 .arrow{
     text-align:center;
 }
+/*==========================
+SERVICE
+==========================*/
 
+.service{
+    padding:80px 0;
+}
+
+.service .container{
+    width:90%;
+    max-width:900px;
+    margin:0 auto;
+}
+
+.service h1{
+    text-align:center;
+    color:#003b82;
+    margin-bottom:10px;
+}
+
+.service .sub-title{
+    text-align:center;
+    color:#666;
+    margin-bottom:60px;
+}
+
+.service-box{
+    margin:70px 0;
+}
+
+.service-photo{
+    display:block;
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+    border-radius:12px;
+}
+
+.arrow{
+    text-align:center;
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.service-list{
+    list-style:none;
+    width:fit-content;
+    margin:0 auto;
+    padding:0;
+    text-align:left;
+}
+
+.service-list li{
+    line-height:2;
+}
+
+.service hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:70px 0;
+}
   
