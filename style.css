@@ -1165,9 +1165,9 @@ SERVICE
 
 .service{
 
-    max-width:1100px;
+      width:90%;
+    max-width:900px;
     margin:80px auto;
-    padding:0 20px;
 
 }
 
