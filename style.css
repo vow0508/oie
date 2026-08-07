@@ -1155,14 +1155,64 @@ footer{
 
 
 
+/*-------------------------------
+  service
+-------------------------------*/
 
 
 
 
 
 
+.service{
+    max-width:1000px;
+    margin:80px auto;
+    padding:20px;
+}
 
+.service h1{
+    text-align:center;
+    font-size:48px;
+}
 
+.sub-title{
+    text-align:center;
+    color:#777;
+    margin-bottom:60px;
+}
+
+.service-box{
+    margin-bottom:80px;
+}
+
+.service-box h2{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#0b3d91;
+}
+
+.service-box img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.arrow{
+    font-size:20px;
+    font-weight:bold;
+    color:#0b3d91;
+    margin-bottom:20px;
+}
+
+.service-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.service-box li{
+    font-size:20px;
+    line-height:2;
+}
 
 
 
