@@ -1102,8 +1102,55 @@ footer{
 }
 
 
+/*-------------------------------
+  会社概要
+-------------------------------*/
 
+.company-info{
 
+    padding:100px 20px;
+
+}
+
+.company-table{
+
+    max-width:700px;
+    margin:60px auto;
+
+}
+
+.company-table .item{
+
+    border-bottom:1px solid #e5e5e5;
+    padding:18px 0;
+
+}
+
+.company-table h3{
+
+    font-size:16px;
+    color:#777;
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.company-table p{
+
+    font-size:18px;
+    line-height:1.6;
+    color:#333;
+    margin:2px 0;
+
+}
+
+.exp-logo{
+
+    width:180px;
+    display:block;
+    margin:50px auto 0;
+
+}
 
 
 
