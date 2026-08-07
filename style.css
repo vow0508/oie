@@ -1405,4 +1405,13 @@ SERVICE
     border-top:1px solid #ddd;
     margin:70px 0;
 }
-  
+  .service{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.service .container{
+    width:700px;
+    margin:0;
+}
