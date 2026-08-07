@@ -1192,23 +1192,6 @@ SERVICE
 =================================
 
 
-.page-service{
-    margin:0;
-    padding:0;
-    font-family:"Yu Gothic","Meiryo",sans-serif;
-    color:#333;
-    background:#fff;
-}
-
-.page-service main{
-    width:100%;
-}
-
-.page-service .service{
-    max-width:900px;
-    margin:0 auto;
-}
-
 body{
     font-family:"Yu Gothic","Meiryo",sans-serif;
     font-size:18px;
