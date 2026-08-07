@@ -1191,33 +1191,114 @@ SERVICE
 SERVICE
 =========================*/
 
-.container{
+.service{
 
+    padding:80px 0;
+
+}
+
+.service .container{
+
+    width:90%;
     max-width:900px;
     margin:0 auto;
-    padding:0 20px;
 
 }
 
-.container h1,
-.container h2,
-.container .sub-title{
+.service h1{
 
     text-align:center;
+    font-size:52px;
+    color:#003b82;
+    margin-bottom:10px;
 
 }
 
-.container p{
+.service .sub-title{
 
-    text-align:left;
+    text-align:center;
+    color:#666;
+    margin-bottom:60px;
 
 }
 
-.check-list{
+.service h2{
 
-    max-width:420px;
-    margin:30px auto;
-    text-align:left;
+    font-size:34px;
+    color:#003b82;
+    margin:70px 0 25px;
+
+}
+
+.service-photo{
+
+    display:block;
+    width:100%;
+    max-width:700px;
+    margin:0 auto 30px;
+    border-radius:12px;
+
+}
+
+.service-text{
+
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:25px;
+
+}
+
+.service-list{
+
+    list-style:none;
+    padding:0;
+    margin:0 0 60px 0;
+
+}
+
+.service-list li{
+
+    font-size:18px;
+    line-height:2;
+    padding-left:10px;
+
+}
+
+.service hr{
+
+    border:none;
+    border-top:1px solid #ddd;
+    margin:70px 0;
+
+}
+
+/* スマホ */
+
+@media(max-width:768px){
+
+.service h1{
+
+    font-size:38px;
+
+}
+
+.service h2{
+
+    font-size:28px;
+
+}
+
+.service-text{
+
+    font-size:17px;
+
+}
+
+.service-list li{
+
+    font-size:16px;
+
+}
 
 }
 
