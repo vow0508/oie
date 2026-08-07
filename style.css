@@ -1234,32 +1234,15 @@ SERVICE
 
 }
 
-.service-box{
-
-    max-width:800px;
-
-}
-
 
 .service{
-
-    padding:80px 20px;
-
+    padding:80px 0;
 }
 
-.service .container{
-
-    max-width:900px;
-    margin:0 auto;
-
+.service-box{
+    max-width:800px;
+    margin:0 auto 80px;
 }
-
-.service .container{
-
-    max-width:760px;
-
-}
-
 
 
 
