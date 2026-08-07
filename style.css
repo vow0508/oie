@@ -795,7 +795,21 @@ header{
 
 }
 
+/* 画像を画面幅に合わせる */
 
+.responsive-img{
+
+    display:block;
+
+    width:100%;
+
+    max-width:100%;
+
+    height:auto;
+
+    margin:0 auto;
+
+}
 
 
 
