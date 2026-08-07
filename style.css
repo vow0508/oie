@@ -1513,3 +1513,29 @@ SERVICE
     margin: 0 auto 40px !important;
     padding: 0 !important;
 }
+/*==================================================
+  SERVICE 救済用・最優先中央寄せ
+==================================================*/
+
+main .service,
+main .service .container,
+main .service .service-box {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    float: none !important;
+}
+
+main .service-list {
+    display: inline-block !important;
+    text-align: left !important;
+    margin: 0 auto 40px !important;
+    padding: 0 !important;
+}
+
+main .service-photo {
+    display: block !important;
+    margin: 30px auto !important;
+}
