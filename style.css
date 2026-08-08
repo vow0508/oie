@@ -1459,6 +1459,10 @@ SERVICE
     .service-list li{
         font-size:16px;
     }
+
+  .fee-title{
+    color:#8B0000;
+}
 }
 
 }
