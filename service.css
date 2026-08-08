@@ -1,1 +1,92 @@
-a
+/* ==========================
+   SERVICE PAGE
+========================== */
+
+.service {
+    padding: 80px 0;
+}
+
+.service .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #003b82;
+    margin-bottom: 10px;
+}
+
+.service .sub-title {
+    text-align: center;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.service-box {
+    margin: 80px auto;
+    text-align: center;
+}
+
+.service-box h2 {
+    font-size: 34px;
+    color: #003b82;
+    margin-bottom: 30px;
+}
+
+.service-photo {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.arrow {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.service-list {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto 50px;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.service hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 70px 0;
+}
+
+@media (max-width:768px){
+
+    .service h1{
+        font-size:36px;
+    }
+
+    .service-box h2{
+        font-size:28px;
+    }
+
+    .arrow{
+        font-size:17px;
+    }
+
+    .service-list li{
+        font-size:16px;
+    }
+
+}
