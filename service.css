@@ -91,13 +91,21 @@
 
 
 
-   /*=========================================
+/*=========================================
   ABOUT
 =========================================*/
 
 .about{
 
-    padding:80px 0;
+    padding:60px 0 80px;
+
+}
+
+.about .container{
+
+    width:90%;
+    max-width:900px;
+    margin:0 auto;
 
 }
 
@@ -106,21 +114,22 @@
     text-align:center;
     font-size:56px;
     color:#003b82;
-    margin-bottom:15px;
+    margin:0 0 10px;
 
 }
 
 .about .sub-title{
 
     text-align:center;
-    color:#666;
     font-size:20px;
-    margin-bottom:60px;
+    color:#666;
+    margin-bottom:50px;
 
 }
 
 .company-table{
 
+    width:100%;
     max-width:800px;
     margin:0 auto;
 
@@ -133,16 +142,17 @@
 
 }
 
-.company-table h3{
+.company-table .item h3{
 
     color:#003b82;
     font-size:24px;
-    margin-bottom:10px;
+    margin:0 0 10px;
 
 }
 
-.company-table p{
+.company-table .item p{
 
+    margin:0;
     font-size:18px;
     line-height:1.8;
 
@@ -158,11 +168,62 @@
 .exp-logo{
 
     width:100%;
-    max-width:350px;
+    max-width:320px;
+    height:auto;
 
 }
 
 
+/*=========================
+  スマホ
+=========================*/
+
+@media (max-width:768px){
+
+.about{
+
+    padding:30px 0 50px;
+
+}
+
+.about h1{
+
+    font-size:42px;
+
+}
+
+.about .sub-title{
+
+    font-size:17px;
+    margin-bottom:35px;
+
+}
+
+.company-table .item{
+
+    padding:18px 0;
+
+}
+
+.company-table .item h3{
+
+    font-size:20px;
+
+}
+
+.company-table .item p{
+
+    font-size:16px;
+
+}
+
+.exp-logo{
+
+    max-width:220px;
+
+}
+
+}
 
 /*------------------------------
   ABOUT（スマホ）
