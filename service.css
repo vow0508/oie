@@ -89,43 +89,16 @@
         font-size:16px;
     }
 
-
-
-
-
-   @media (max-width:768px){
-
-    .service{
-
-        padding:30px 0;
-
-    }
+@media (max-width:768px){
 
     .service h1{
-
-        margin-top:0;
-        margin-bottom:10px;
-
-    }
-
-    .service .sub-title{
-
-        margin-bottom:30px;
-
-    }
-
-    .service-box{
-
-        margin:40px auto;
-
-    }
-
-    .service-box h2{
-
-        margin:30px 0 20px;
-
+        margin-top:-80px;
     }
 
 }
 
-}
+
+
+
+
+
