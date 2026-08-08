@@ -95,8 +95,6 @@
         margin-top:-120px;
     }
 
-}
-
 
 header{
     margin-bottom:0 !important;
@@ -108,5 +106,10 @@ header{
     padding-top:0 !important;
 }
 
+   @media (max-width:768px){
+
+    .service{
+        margin-top:-120px;
+    }
 
 
