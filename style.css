@@ -1426,6 +1426,11 @@ SERVICE
     color:#333;
 }
 
+
+  .fee-title{
+    color:#8B0000;
+}
+  
 @media (max-width:768px){
 
     .service{
@@ -1460,8 +1465,5 @@ SERVICE
         font-size:16px;
     }
 
-  .fee-title{
-    color:#8B0000;
-}
 
 }
