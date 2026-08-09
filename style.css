@@ -298,6 +298,74 @@ padding:30px 20px;
 
 
 
+/*-------------------------------
+  TYPOGRAPHY (共通)
+-------------------------------*/
+/* .hero 以外のH1などはPC用のスタイルが継承されるか、
+   必要に応じてここで再定義してください。 */
+h2{
+    font-size:28px;
+}
+
+h3{
+    font-size:22px;
+}
+
+p{
+    font-size:17px;
+    line-height:1.9;
+}
+
+/*-------------------------------
+  各セクション (PC用を継承または微調整)
+-------------------------------*/
+/* ... 既存の .idea, .company, .inspection-check 関連のスタイル ... */
+/* これらはPC用からの継承で概ね崩れないはずですが、
+   崩れる場合はPC用のセクション定義をここにも記述してください。 */
+
+/*==========================
+  SERVICE (スマートフォン用)
+==========================*/
+/* 既存の .service 関連のスタイルをここに維持 */
+.service{
+    padding:40px 0;
+}
+
+.service .container{
+    width:92%;
+}
+
+.service h1{
+    font-size:36px;
+}
+
+.service h2{
+    font-size:28px;
+}
+
+.service .sub-title{
+    font-size:18px;
+}
+
+.service-photo{
+    max-width:100%;
+}
+
+.arrow{
+    font-size:17px;
+}
+
+.service-list li{
+    font-size:16px;
+}
+
+/*-------------------------------
+  FOOTER (共通)
+-------------------------------*/
+footer{
+    padding:35px 20px;
+}
+
 
 
 
@@ -732,6 +800,146 @@ footer p{
   MOBILE
 ==================================================*/
 
+/*==================================================
+  MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+    /* HEADER */
+    header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    .logo{ width:140px; }
+
+    .menu-toggle{
+        display:block;
+        font-size:34px;
+        cursor:pointer;
+    }
+
+    .menu{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+        background:#fff;
+        text-align:center;
+        padding:20px 0;
+        box-shadow:0 6px 18px rgba(0,0,0,.15);
+        z-index:1000;
+    }
+
+    .menu.active{ display:block; }
+
+    .menu a{
+        display:block;
+        padding:15px 0;
+        margin:0;
+    }
+
+    /* HOME HERO：スマホだけ写真 → 文章 */
+    .hero{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:flex-start;
+        width:100%;
+        max-width:1200px;
+        margin:0 auto;
+        gap:30px;
+        padding:20px 20px;
+    }
+
+    .hero-image{
+        order:1;
+        flex:none;
+        width:100%;
+        text-align:center;
+        margin:0;
+    }
+
+    .hero-image img{
+        display:block;
+        width:90%;
+        max-width:340px;
+        height:auto;
+        margin:20px auto;
+    }
+
+    .hero-text{
+        order:2;
+        flex:none;
+        width:100%;
+        max-width:340px;
+        margin:0 auto;
+        text-align:left;
+    }
+
+    .hero h1{ line-height:1.2; }
+
+    /* TYPOGRAPHY */
+    h1{font-size:30px;}
+    h2{font-size:28px;}
+    h3{font-size:22px;}
+
+    p{
+        font-size:17px;
+        line-height:1.9;
+    }
+
+    /* IDEA */
+    .idea{padding:40px 20px;}
+    .idea .sub-title{font-size:18px;}
+    .idea-image{margin-bottom:30px;}
+
+    .idea-text{
+        max-width:100%;
+        padding:0 18px;
+    }
+
+    .idea-text h2{font-size:28px;}
+    .idea-text h3{font-size:22px;}
+
+    .idea-text p{
+        font-size:17px;
+        line-height:2;
+    }
+
+    /* COMPANY */
+    .company{
+        max-width:100%;
+        padding:0 20px;
+    }
+
+    .company h2{font-size:17px;}
+    .company p{font-size:17px;}
+
+    /* INSPECTION */
+    .inspection-check{padding:50px 20px;}
+    .inspection-check h2{font-size:20px;}
+    .inspection-check h3{font-size:28px;}
+    .inspection-photo{max-width:100%;}
+    .check-list{width:100%;}
+    .check-list li{font-size:18px;}
+
+    .measurement-box{max-width:100%;}
+    .measurement-title{font-size:20px;}
+    .measurement-label{font-size:28px;}
+    .measurement-number{font-size:60px;}
+    .measurement-number span{font-size:30px;}
+
+    .danger-list{width:100%;}
+    .danger-list li{font-size:18px;}
+
+    footer{padding:35px 20px;}
+}
+
 /*-------------------------------
   会社概要
 -------------------------------*/
@@ -1055,235 +1263,43 @@ SERVICE
     line-height:2;
     color:#333;
 }
-/*==================================================
-  MOBILE
-==================================================*/
 
-@media (max-width: 768px) {
 
-    /* HEADER */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    .logo {
-        width: 140px;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 34px;
-        cursor: pointer;
-    }
-
-    .menu {
-        display: none;
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        text-align: center;
-        padding: 20px 0;
-        box-shadow: 0 6px 18px rgba(0,0,0,.15);
-        z-index: 1000;
-    }
-
-    .menu.active {
-        display: block;
-    }
-
-    .menu a {
-        display: block;
-        padding: 15px 0;
-        margin: 0;
-    }
-
-    /* HOME HERO
-       スマホ：写真 → 文章 */
-    .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 0 auto;
-        gap: 30px;
-        padding: 20px;
-    }
-
-    .hero-image {
-        order: 1;
-        flex: none;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-
-    .hero-image img {
-        display: block;
-        width: 90%;
-        max-width: 340px;
-        height: auto;
-        margin: 20px auto;
-    }
-
-    .hero-text {
-        order: 2;
-        flex: none;
-        width: 100%;
-        max-width: 340px;
-        margin: 0 auto;
-        text-align: left;
-    }
-
-    .hero h1 {
-        line-height: 1.2;
-    }
-
-    /* TYPOGRAPHY */
-    h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 17px;
-        line-height: 1.9;
-    }
-
-    /* IDEA */
-    .idea {
-        padding: 40px 20px;
-    }
-
-    .idea .sub-title {
-        font-size: 18px;
-    }
-
-    .idea-image {
-        margin-bottom: 30px;
-    }
-
-    .idea-text {
-        max-width: 100%;
-        padding: 0 18px;
-    }
-
-    .idea-text h2 {
-        font-size: 28px;
-    }
-
-    .idea-text h3 {
-        font-size: 22px;
-    }
-
-    .idea-text p {
-        font-size: 17px;
-        line-height: 2;
-    }
-
-    /* COMPANY */
-    .company {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-
-    .company h2 {
-        font-size: 17px;
-    }
-
-    .company p {
-        font-size: 17px;
-    }
-
-    /* INSPECTION */
-    .inspection-check {
-        padding: 50px 20px;
-    }
-
-    .inspection-check h2 {
-        font-size: 20px;
-    }
-
-    .inspection-check h3 {
-        font-size: 28px;
-    }
-
-    .inspection-photo {
-        max-width: 100%;
-    }
-
-    .check-list {
-        width: 100%;
-    }
-
-    .check-list li {
-        font-size: 18px;
-    }
-
-    .measurement-box {
-        max-width: 100%;
-    }
-
-    .measurement-title {
-        font-size: 20px;
-    }
-
-    .measurement-label {
-        font-size: 28px;
-    }
-
-    .measurement-number {
-        font-size: 60px;
-    }
-
-    .measurement-number span {
-        font-size: 30px;
-    }
-
-    .danger-list {
-        width: 100%;
-    }
-
-    .danger-list li {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 35px 20px;
-    }
-
-    /* SERVICE */
-    .service {
-        width: 100%;
-        padding: 40px 20px;
-        margin: 40px auto;
-    }
-
-    .service h1 {
-        font-size: 38px;
-    }
-
-    .service h2 {
-        font-size: 28px;
-    }
-
-    .service-text {
-        font-size: 17px;
-    }
-
-    .service-list li {
-        font-size: 16px;
-    }
 }
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
