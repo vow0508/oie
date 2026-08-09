@@ -33,7 +33,206 @@ gtag('config','G-5256FCTDNK');
 
 <link rel="stylesheet" href="style.css">
 
+/*==================================================
+  MOBILE (スマートフォン向けスタイル)
+  ※style.css の最下部にあるメディアクエリ内を
+   以下の内容に差し替えてください。
+==================================================*/
 
+@media (max-width:768px){
+
+/*-------------------------------
+  HEADER (共通)
+-------------------------------*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    margin: 10px auto; /* マージンを少し調整 */
+}
+
+.logo{
+    width:140px;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:34px;
+    cursor:pointer;
+}
+
+.menu{
+    display:none;
+    position:absolute;
+    top:70px; /* 位置を微調整 */
+    left:0;
+    width:100%;
+    background:#fff;
+    text-align:center;
+    padding:20px 0;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    z-index: 100; /* 重なり順を上にする */
+}
+
+.menu.active{
+    display:block;
+}
+
+.menu a{
+    display:block;
+    padding:15px 0;
+    margin:0;
+}
+
+/*-------------------------------
+  HERO (スマートフォン専用・画像上に文字を配置)
+-------------------------------*/
+.hero {
+    display: block; /* Flexを解除 */
+    padding: 0; /* 全体のパディングを解除 */
+    margin: 0 auto;
+    position: relative; /* 子要素の基準位置にする */
+    width: 100%;
+}
+
+/* ヒーロー画像エリア */
+.hero-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0; /* 画像下の余計な隙間をなくす */
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%; /* max-widthを解除 */
+    height: auto;
+    border-radius: 0; /* 画像の角丸を解除 (画面端まで広げるため) */
+    box-shadow: none; /* 影を解除 */
+}
+
+/* ヒーローテキストエリア (画像の上に重ねる) */
+.hero-text {
+    position: absolute; /* 画像の上に絶対配置 */
+    top: 20px; /* 画像の上端からの位置 */
+    left: 20px; /* 画像の左端からの位置 */
+    right: 20px; /* 画像の右端からの位置 */
+    width: auto; /* widthを自動に */
+    max-width: none;
+    margin: 0;
+    text-align: left;
+    z-index: 10; /* 画像より上に表示 */
+}
+
+/* メインコピー (白文字にして視認性を確保) */
+.hero h1 {
+    font-size: 26px; /* 小さく調整 */
+    line-height: 1.3;
+    color: #fff; /* 文字色を白に */
+    font-weight: 700;
+    margin-bottom: 15px;
+    /* 文字の可読性を上げるための影 */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+}
+
+/* サブテキスト (画像下または白背景エリアに配置したい場合は調整が必要) */
+/* 今回は画像の上に全て重ねる設定にします */
+.hero-text p {
+    font-size: 15px; /* 小さく調整 */
+    line-height: 1.6;
+    color: #fff; /* 文字色を白に */
+    margin-bottom: 15px;
+    /* 文字の可読性を上げるための影 */
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* ボタン (中央寄せにする) */
+.hero-text .btn {
+    display: block; /* ブロック化 */
+    width: fit-content; /* 幅をコンテンツに合わせる */
+    margin: 0 auto 20px; /* 中央寄せ */
+    padding: 15px 30px; /* サイズ調整 */
+    font-size: 18px;
+}
+
+/* 注釈テキスト (白文字にして下に配置) */
+.hero-note {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fff; /* 文字色を白に */
+    margin-top: 10px;
+}
+
+/*-------------------------------
+  TYPOGRAPHY (共通)
+-------------------------------*/
+/* .hero 以外のH1などはPC用のスタイルが継承されるか、
+   必要に応じてここで再定義してください。 */
+h2{
+    font-size:28px;
+}
+
+h3{
+    font-size:22px;
+}
+
+p{
+    font-size:17px;
+    line-height:1.9;
+}
+
+/*-------------------------------
+  各セクション (PC用を継承または微調整)
+-------------------------------*/
+/* ... 既存の .idea, .company, .inspection-check 関連のスタイル ... */
+/* これらはPC用からの継承で概ね崩れないはずですが、
+   崩れる場合はPC用のセクション定義をここにも記述してください。 */
+
+/*==========================
+  SERVICE (スマートフォン用)
+==========================*/
+/* 既存の .service 関連のスタイルをここに維持 */
+.service{
+    padding:40px 0;
+}
+
+.service .container{
+    width:92%;
+}
+
+.service h1{
+    font-size:36px;
+}
+
+.service h2{
+    font-size:28px;
+}
+
+.service .sub-title{
+    font-size:18px;
+}
+
+.service-photo{
+    max-width:100%;
+}
+
+.arrow{
+    font-size:17px;
+}
+
+.service-list li{
+    font-size:16px;
+}
+
+/*-------------------------------
+  FOOTER (共通)
+-------------------------------*/
+footer{
+    padding:35px 20px;
+}
+
+} /* メディアクエリの閉じ */
 
 </head>
 
