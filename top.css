@@ -56,7 +56,28 @@
 }
 
 
+.hero-text {
+    order: 1 !important;
+    display: block !important;
 
+    /* 文章の横幅を100%にしない */
+    width: 90% !important;
+    max-width: 360px !important;
+
+    /* 上は詰める・下は余白を作る */
+    margin: 0 auto 30px !important;
+
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+}
+
+.hero-text h1 {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+}
 
 
 
