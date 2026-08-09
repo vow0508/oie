@@ -1515,40 +1515,6 @@ SERVICE
 
   
 
-@media (max-width:768px){
-
-    .service{
-        padding:40px 0;
-    }
-
-    .service .container{
-        width:92%;
-    }
-
-    .service h1{
-        font-size:36px;
-    }
-
-    .service h2{
-        font-size:28px;
-    }
-
-    .service .sub-title{
-        font-size:18px;
-    }
-
-    .service-photo{
-        max-width:100%;
-    }
-
-    .arrow{
-        font-size:17px;
-    }
-
-    .service-list li{
-        font-size:16px;
-    }
-
 
 
 }
