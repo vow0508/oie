@@ -34,7 +34,7 @@
     /* ② 写真 */
     .hero-image {
         order: 2 !important;
-        width: 100% !important;
+        width: 90% !important;
         margin: 0 !important;
         padding: 0 !important;
         text-align: center !important;
