@@ -299,153 +299,808 @@ padding:30px 20px;
 
 
 
+
+
+
+
+
+
+/*==================================================
+  IDEA
+==================================================*/
+
+.idea{
+
+    padding:70px 20px 40px;
+
+    text-align:center;
+
+}
+
+.idea .sub-title{
+
+    font-size:20px;
+
+    color:#777;
+
+}
+
+
+/*==================================================
+  IDEA SECTION
+==================================================*/
+
+.idea-section{
+
+    padding:70px 0;
+
+}
+
+.idea-image{
+
+    max-width:1100px;
+
+    margin:0 auto 50px;
+
+}
+
+.idea-text{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+    text-align:left;
+
+}
+
+.idea-text h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.idea-text h3{
+
+    text-align:center;
+
+    color:#0b3a77;
+
+    margin-bottom:30px;
+
+}
+
+.idea-text p{
+
+    font-size:18px;
+
+    line-height:2.1;
+
+    color:#444;
+
+    margin-bottom:24px;
+
+}
+
+
+/*==================================================
+  IDEA LAST
+==================================================*/
+
+.idea-last{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.idea-last h2{
+
+    margin-bottom:30px;
+
+}
+
+.idea-last h3{
+
+    color:#0b3a77;
+
+    font-size:32px;
+
+    margin:35px 0;
+
+}
+
+.idea-last p{
+
+    max-width:760px;
+
+    margin:0 auto 24px;
+
+    line-height:2;
+
+}
+
+
+
+
+/*==================================================
+  COMPANY
+==================================================*/
+
+.company{
+
+    max-width:760px;
+
+    margin:80px auto;
+
+    padding:0 20px;
+
+}
+
+.company h1{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.company h2{
+
+    font-size:18px;
+
+    color:#888;
+
+    margin-top:35px;
+
+    margin-bottom:10px;
+
+}
+
+.company p{
+
+    font-size:18px;
+
+    color:#333;
+
+    line-height:1.9;
+
+}
+
+.company hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:30px 0;
+
+}
+
+
+/*==================================================
+  INSPECTION
+==================================================*/
+
+.inspection{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.inspection-check{
+
+    padding:80px 20px;
+
+}
+
+.inspection-check .container{
+
+    max-width:900px;
+
+}
+
+.inspection-check h2{
+
+    font-size:22px;
+
+    color:#0b3a77;
+
+    text-align:center;
+
+}
+
+.inspection-check h3{
+
+    font-size:36px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.inspection-photo{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+    transition:.3s;
+
+}
+
+.inspection-photo:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/*==================================================
+  CHECK LIST
+==================================================*/
+
+.check-list{
+
+    list-style:none;
+
+    width:fit-content;
+
+    margin:40px auto;
+
+    padding:0;
+
+    text-align:left;
+
+}
+
+.check-list li{
+
+    margin:15px 0;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#0b3a77;
+
+}
+
+
+/*==================================================
+  NOTE
+==================================================*/
+
+.note{
+
+    font-size:15px;
+
+    color:#666;
+
+}
+
+
+/*==================================================
+  MEASUREMENT BOX
+==================================================*/
+
+.measurement-box{
+
+    max-width:450px;
+
+    margin:50px auto;
+
+    padding:40px 20px;
+
+    background:#0b2d63;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+.measurement-title{
+
+    color:#fff;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.measurement-label{
+
+    color:#fff;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+.measurement-number{
+
+    color:#ffd700;
+
+    font-size:82px;
+
+    font-weight:900;
+
+    line-height:1.1;
+
+    margin:20px 0;
+
+}
+
+.measurement-number span{
+
+    color:#fff;
+
+    font-size:40px;
+
+}
+
+
+/*==================================================
+  DANGER LIST
+==================================================*/
+
+.danger-list{
+
+    list-style:none;
+
+    width:fit-content;
+
+    margin:40px auto;
+
+    padding:0;
+
+    text-align:left;
+
+}
+
+.danger-list li{
+
+    margin:15px 0;
+
+    font-size:20px;
+
+}
+
+
+/*==================================================
+  FOOTER
+==================================================*/
+
+footer{
+
+    background:#0b3a77;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+    margin-top:80px;
+
+}
+
+footer p{
+
+    color:#fff;
+
+    font-size:15px;
+
+    margin:0;
+
+}
+
+
 /*==================================================
   MOBILE
 ==================================================*/
 
 @media (max-width:768px){
 
-    /* HEADER */
-    header{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:15px 20px;
-    }
+/*-------------------------------
+  HEADER
+-------------------------------*/
 
-    .logo{
-        width:140px;
-    }
+header{
 
-    .menu-toggle{
-        display:block;
-        font-size:34px;
-        cursor:pointer;
-    }
+    display:flex;
 
-    .menu{
-        display:none;
-        position:absolute;
-        top:75px;
-        left:0;
-        width:100%;
-        background:#fff;
-        text-align:center;
-        padding:20px 0;
-        box-shadow:0 6px 18px rgba(0,0,0,.15);
-        z-index:1000;
-    }
+    justify-content:space-between;
 
-    .menu.active{
-        display:block;
-    }
+    align-items:center;
 
-    .menu a{
-        display:block;
-        padding:15px 0;
-        margin:0;
-    }
+    padding:15px 20px;
 
-    /* HOME HERO：スマホだけ「写真 → 文章」 */
+}
+
+.logo{
+
+    width:140px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
+
+.menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    text-align:center;
+
+    padding:20px 0;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+}
+
+.menu.active{
+
+    display:block;
+
+}
+
+.menu a{
+
+    display:block;
+
+    padding:15px 0;
+
+    margin:0;
+
+}
+
+
+
+
+@media (max-width:768px){
+
     .hero{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:flex-start;
-        width:100%;
-        max-width:1200px;
-        margin:0 auto;
-        gap:30px;
+
         padding:20px 20px;
-    }
 
-    .hero-image{
-        order:1;
-        flex:none;
-        width:100%;
-        text-align:center;
-        margin:0;
-    }
-
-    .hero-image img{
-        display:block;
-        width:90%;
-        max-width:340px;
-        height:auto;
-        margin:20px auto;
     }
 
     .hero-text{
-        order:2;
-        flex:none;
+
+        max-width:320px;
+
+        margin:0 0;
+
+    }
+
+@media (max-width:768px){
+
+    .hero{
+
+        display:flex;
+        flex-direction:column-reverse;
+        align-items:center;
+        gap:30px;
+        padding:30px 20px;
+
+    }
+
+    .hero-text{
+
         width:100%;
         max-width:340px;
         margin:0 auto;
         text-align:left;
+
     }
 
-    .hero h1{
-        line-height:1.2;
+    .hero-image{
+
+        width:100%;
+        text-align:center;
+      margin-top:-40px;
+       margin-bottom:-10px;
+
     }
 
-    /* TYPOGRAPHY */
-    h1{ font-size:30px; }
-    h2{ font-size:28px; }
-    h3{ font-size:22px; }
+    .hero-image img{
 
-    p{
-        font-size:17px;
-        line-height:1.9;
+        width:90%;
+        max-width:340px;
+        height:auto;
+
     }
 
-    /* IDEA */
-    .idea{ padding:40px 20px; }
-
-    .idea .sub-title{ font-size:18px; }
-
-    .idea-image{ margin-bottom:30px; }
-
-    .idea-text{
-        max-width:100%;
-        padding:0 18px;
-    }
-
-    .idea-text h2{ font-size:28px; }
-    .idea-text h3{ font-size:22px; }
-
-    .idea-text p{
-        font-size:17px;
-        line-height:2;
-    }
-
-    /* COMPANY */
-    .company{
-        max-width:100%;
-        padding:0 20px;
-    }
-
-    .company h2{ font-size:17px; }
-    .company p{ font-size:17px; }
-
-    /* INSPECTION */
-    .inspection-check{ padding:50px 20px; }
-    .inspection-check h2{ font-size:20px; }
-    .inspection-check h3{ font-size:28px; }
-    .inspection-photo{ max-width:100%; }
-    .check-list{ width:100%; }
-    .check-list li{ font-size:18px; }
-
-    .measurement-box{ max-width:100%; }
-    .measurement-title{ font-size:20px; }
-    .measurement-label{ font-size:28px; }
-    .measurement-number{ font-size:60px; }
-    .measurement-number span{ font-size:30px; }
-
-    .danger-list{ width:100%; }
-    .danger-list li{ font-size:18px; }
-
-    footer{ padding:35px 20px; }
 }
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*-------------------------------
+  HERO
+-------------------------------*/
+
+.hero{
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:0px 0px;
+
+}
+
+.hero-text{
+
+    order:2;
+
+    text-align:left;
+
+}
+
+.hero-image{
+
+    order:1;
+
+}
+
+.hero h1{
+
+    line-height:1.2;
+
+}
+
+
+  
+/*-------------------------------
+  TYPOGRAPHY
+-------------------------------*/
+
+h1{
+
+    font-size:30px;
+
+}
+
+h2{
+
+    font-size:28px;
+
+}
+
+h3{
+
+    font-size:22px;
+
+}
+
+p{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+}
+
+/*-------------------------------
+  IDEA
+-------------------------------*/
+
+.idea{
+
+    padding:40px 20px;
+
+}
+
+.idea .sub-title{
+
+    font-size:18px;
+
+}
+
+.idea-image{
+
+    margin-bottom:30px;
+
+}
+
+.idea-text{
+
+    max-width:100%;
+
+    padding:0 18px;
+
+}
+
+.idea-text h2{
+
+    font-size:28px;
+
+}
+
+.idea-text h3{
+
+    font-size:22px;
+
+}
+
+.idea-text p{
+
+    font-size:17px;
+
+    line-height:2;
+
+}
+
+/*-------------------------------
+  COMPANY
+-------------------------------*/
+
+.company{
+
+    max-width:100%;
+
+    padding:0 20px;
+
+}
+
+.company h2{
+
+    font-size:17px;
+
+}
+
+.company p{
+
+    font-size:17px;
+
+}
+
+/*-------------------------------
+  INSPECTION
+-------------------------------*/
+
+.inspection-check{
+
+    padding:50px 20px;
+
+}
+
+.inspection-check h2{
+
+    font-size:20px;
+
+}
+
+.inspection-check h3{
+
+    font-size:28px;
+
+}
+
+.inspection-photo{
+
+    max-width:100%;
+
+}
+
+.check-list{
+
+    width:100%;
+
+}
+
+.check-list li{
+
+    font-size:18px;
+
+}
+
+.measurement-box{
+
+    max-width:100%;
+
+}
+
+.measurement-title{
+
+    font-size:20px;
+
+}
+
+.measurement-label{
+
+    font-size:28px;
+
+}
+
+.measurement-number{
+
+    font-size:60px;
+
+}
+
+.measurement-number span{
+
+    font-size:30px;
+
+}
+
+.danger-list{
+
+    width:100%;
+
+}
+
+.danger-list li{
+
+    font-size:18px;
+
+}
+
+footer{
+
+    padding:35px 20px;
+
+}
+
+}
+
 
 /*-------------------------------
   会社概要
@@ -534,279 +1189,118 @@ SERVICE
 
 /*=========================
 SERVICE
-=================================
-/*=========================
-  SERVICE
 =========================*/
 
 .service{
-    width:90%;
-    max-width:900px;
-    margin:80px auto;
-    padding:0;
+
+    padding:80px 0;
+
 }
 
 .service .container{
-    width:100%;
+
+    width:90%;
     max-width:900px;
     margin:0 auto;
+
 }
 
 .service h1{
+
     text-align:center;
-    font-size:48px;
+    font-size:52px;
     color:#003b82;
     margin-bottom:10px;
+
 }
 
 .service .sub-title{
+
     text-align:center;
-    color:#777;
+    color:#666;
     margin-bottom:60px;
+
 }
 
 .service h2{
+
     font-size:34px;
     color:#003b82;
     margin:70px 0 25px;
+
 }
 
 .service-photo{
+
     display:block;
     width:100%;
     max-width:700px;
     margin:0 auto 30px;
     border-radius:12px;
+
 }
 
 .service-text{
+
     font-size:20px;
     line-height:1.8;
     margin-bottom:25px;
+
 }
 
 .service-list{
+
     list-style:none;
     padding:0;
-    margin:0 0 60px;
+    margin:0 0 60px 0;
+
 }
 
 .service-list li{
+
     font-size:18px;
     line-height:2;
+    padding-left:10px;
+
 }
 
 .service hr{
+
     border:none;
     border-top:1px solid #ddd;
     margin:70px 0;
+
 }
 
-@media (max-width:768px){
+/* スマホ */
 
-    .service{
-        width:100%;
-        padding:40px 20px;
-        margin:40px auto;
-    }
-
-    .service h1{
-        font-size:38px;
-    }
-
-    .service h2{
-        font-size:28px;
-    }
-
-    .service-text{
-        font-size:17px;
-    }
-
-    .service-list li{
-        font-size:16px;
-    }
-}
-.service-box{
-    max-width:900px;
-    margin:70px auto;
-}
-
-.service-box img{
-    display:block;
-    width:100%;
-    max-width:700px;
-    margin:30px auto;
-    border-radius:12px;
-}
-
-.service-box ul{
-    list-style:none;
-    padding:0;
-    margin-top:20px;
-}
-
-.service-box li{
-    line-height:2;
-    font-size:18px;
-}
-
-.arrow{
-    font-size:20px;
-    line-height:1.8;
-}
-
-/*=========================
-  SERVICE 中央配置
-=========================*/
-
-.service{
-    width:90%;
-    max-width:900px;
-    margin:80px auto;
-    text-align:center;
-}
-
-.service-box{
-    max-width:900px;
-    margin:70px auto;
-}
-
-.service-box img{
-    display:block;
-    width:100%;
-    max-width:700px;
-    margin:30px auto;
-}
-
-.service-box ul{
-    list-style:none;
-    padding:0;
-    margin:20px auto;
-    display:inline-block;
-    text-align:left;
-}
-
-.arrow{
-    text-align:center;
-}
-
-/*==================================================
-  SERVICE
-==================================================*/
-
-.service{
-    padding:80px 0;
-}
-
-.service .container{
-    width:90%;
-    max-width:900px;
-    margin:0 auto;
-}
+@media(max-width:768px){
 
 .service h1{
-    font-size:48px;
-  
-    text-align:center;
-    margin-bottom:10px;
-}
 
-.service .sub-title{
-    text-align:center;
-    color:#777;
-    font-size:20px;
-    margin-bottom:60px;
-}
+    font-size:38px;
 
-.service hr{
-    border:none;
-    border-top:1px solid #ddd;
-    margin:70px 0;
-}
-
-
-
-.service-box{
-    width:100%;
-    margin:70px auto;
 }
 
 .service h2{
-    font-size:34px;
-    color:#003b82;
-    text-align:center;
-    margin-bottom:30px;
+
+    font-size:28px;
+
 }
 
-.service-photo{
-    display:block;
-    width:100%;
-    max-width:700px;
-    height:auto;
-    margin:30px auto;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
+.service-text{
 
-.arrow{
-    text-align:center;
-    font-size:20px;
-    line-height:1.8;
-    color:#444;
-    margin-bottom:30px;
-}
+    font-size:17px;
 
-
-.service-list{
-    list-style:none;
-    width:fit-content;
-    margin:0 auto 60px;
-    padding:0;
-    text-align:left;
 }
 
 .service-list li{
-    font-size:18px;
-    line-height:2;
-    color:#333;
+
+    font-size:16px;
+
 }
 
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
