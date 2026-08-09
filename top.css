@@ -1,22 +1,21 @@
 /* =========================================
    HOME専用 top.css
-   スマホ：キャッチコピー → 写真 → 説明
+   スマホ：
+   キャッチコピー → 写真 → 説明
 ========================================= */
 
 @media screen and (max-width: 768px) {
 
-    /* HEROを縦並び */
     .hero {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 0 30px !important;
     }
 
-    /*
-      hero-textを「箱」としてではなく、
-      中身をheroの直接の子として扱う
-    */
+    /* hero-textの箱を外し、中身をheroの子として並べる */
     .hero-text {
         display: contents !important;
     }
@@ -24,70 +23,39 @@
     /* ① キャッチコピー */
     .hero-text h1 {
         order: 1 !important;
-        width: 100% !important;
-        margin: 0 auto 10px !important;
-        padding: 0 15px !important;
+        width: 90% !important;
+        max-width: 360px !important;
+        margin: 0 auto 30px !important;
+        padding: 0 !important;
         box-sizing: border-box !important;
+        text-align: center !important;
+        line-height: 1.5 !important;
+    }
+
+    /* ② 写真
+       ※ style.css側の order:1 をここで確実に上書き */
+    .hero-image {
+        order: 2 !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
         text-align: center !important;
     }
 
-    /* ② 写真 */
-   
+    .hero-image img {
+        display: block !important;
+        width: 90% !important;
+        max-width: none !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
 
-    /* ③ 説明文・ボタンなど */
+    /* ③ 説明文・ボタン */
     .hero-text p,
     .hero-text .btn,
     .hero-text .hero-note {
         order: 3 !important;
     }
-
-
-
-
-
-
-
-.hero-image img {
-    display: block !important;
-    width: 95% !important;
-    max-width: none !important;
-    height: auto !important;
-    margin: 0 auto !important;
-}
-
-
-.hero-text {
-    order: 1 !important;
-    display: block !important;
-
-    /* 文章の横幅を100%にしない */
-    width: 90% !important;
-    max-width: 360px !important;
-
-    /* 上は詰める・下は余白を作る */
-    margin: 0 auto 30px !important;
-
-    padding: 0 !important;
-    box-sizing: border-box !important;
-    text-align: center !important;
-}
-
-.hero-text h1 {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-    line-height: 1.5 !important;
-}
-
-
-
-
-
-
-
-
-
-   
-
 }
 
