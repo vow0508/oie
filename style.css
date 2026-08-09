@@ -517,7 +517,47 @@ footer p {
 }
 
 
+@media (max-width: 768px) {
 
+    /* ① ヘッダー自体の上下余白（特に下の余白）を最小にする */
+    header {
+        padding: 10px 20px 0 !important; /* 上10px、左右20px、下0 */
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;     /* ヘッダー下のマージンをゼロに */
+    }
+
+    /* ② ヒーローセクション（写真があるブロック）の上の余白をゼロにする */
+    .hero {
+        padding-top: 0 !important;      /* 上の余白をゼロに */
+        padding-bottom: 20px !important;
+        margin-top: 0 !important;
+        gap: 10px !important;            /* 写真と「いい住まい選びは」の間隔 */
+    }
+
+    /* ③ 画像エリア・画像本体の上の余白をゼロにする */
+    .hero-image {
+        order: 1 !important;
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-image img,
+    .responsive-img {
+        margin-top: 0 !important;       /* 画像の上の余白を完全消去 */
+    }
+
+    /* ④ 文章エリア */
+    .hero-text {
+        order: 2 !important;
+        width: 100% !important;
+    }
+
+    h1 {
+        margin-top: 0 !important;       /* 見出しの上の余白を完全消去 */
+    }
+
+}
 
 
 
