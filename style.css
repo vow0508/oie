@@ -1471,7 +1471,48 @@ SERVICE
 
 
 
+@media (max-width:768px){
 
+    .hero{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px 20px 30px;
+    }
+
+    .hero-image{
+        order:1;
+        width:100%;
+        margin:0;
+    }
+
+    .hero-image img{
+        display:block;
+        width:100%;
+        max-width:380px;
+        margin:0 auto;
+    }
+
+    .hero-text{
+        order:2;
+        width:100%;
+        max-width:380px;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:32px;
+        line-height:1.45;
+        margin:20px 0;
+    }
+
+    .hero-text p{
+        font-size:17px;
+        line-height:1.9;
+    }
+}
 
 
 
