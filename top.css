@@ -1,0 +1,62 @@
+/* =========================================
+   お家.com HOME専用CSS
+   top.css
+========================================= */
+
+/* PC */
+.hero {
+    width: 100%;
+}
+
+/* スマホ */
+@media screen and (max-width: 768px) {
+
+    /* HERO全体 */
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 15px 30px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 画像を上 */
+    .hero-image {
+        order: 1 !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero-image img {
+        display: block !important;
+        width: 90% !important;
+        max-width: 340px !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    /* キャッチコピーを画像の下 */
+    .hero-text {
+        order: 2 !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 15px auto 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .hero-text h1 {
+        margin: 0 auto 20px !important;
+        padding: 0 !important;
+        text-align: center !important;
+        line-height: 1.5 !important;
+    }
+}
