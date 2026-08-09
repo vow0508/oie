@@ -1564,8 +1564,33 @@ SERVICE
         margin:20px auto;
     }
 
-}
 
+
+
+
+
+
+
+
+
+
+  @media (max-width:768px){
+
+    .hero{
+        display:flex !important;
+        flex-direction:column !important;
+        align-items:center !important;
+    }
+
+    .hero-image{
+        order:1 !important;
+    }
+
+    .hero-text{
+        order:2 !important;
+    }
+
+}
 
 
   
