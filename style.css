@@ -1329,13 +1329,33 @@ SERVICE
         margin: 0 auto !important;
     }
 
+
+
+.hero {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 60px !important;
+}
+
+.hero-text {
+    flex: 1 !important;
+    order: 1 !important;
+}
+
+.hero-image {
+    flex: 1 !important;
+    order: 2 !important;
+}
+  
 }
 
 
 
 
   
-}
+
 
 
 
