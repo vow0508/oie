@@ -1,27 +1,58 @@
 /* =========================================
    HOME専用 top.css
-   画像を大きくするだけ
+   スマホ：キャッチコピー → 写真 → 説明
 ========================================= */
 
 @media screen and (max-width: 768px) {
 
-    /* キャッチコピー */
-    .hero-text {
-        text-align: center !important;
-    }
-
-    .hero-text h1 {
-        text-align: center !important;
-    }
-
-    /* 写真 */
-    .hero-image {
+    /* HEROを縦並び */
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
         width: 100% !important;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
+    }
+
+    /*
+      hero-textを「箱」としてではなく、
+      中身をheroの直接の子として扱う
+    */
+    .hero-text {
+        display: contents !important;
+    }
+
+    /* ① キャッチコピー */
+    .hero-text h1 {
+        order: 1 !important;
+        width: 100% !important;
+        margin: 0 auto 20px !important;
+        padding: 0 15px !important;
+        box-sizing: border-box !important;
         text-align: center !important;
     }
 
- 
+    /* ② 写真 */
+    .hero-image {
+        order: 2 !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        text-align: center !important;
+    }
+
+    .hero-image img {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    /* ③ 説明文・ボタンなど */
+    .hero-text p,
+    .hero-text .btn,
+    .hero-text .hero-note {
+        order: 3 !important;
+    }
 
 }
