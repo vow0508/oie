@@ -1264,7 +1264,37 @@ SERVICE
     color:#333;
 }
 
+/* PC：HOMEの写真を文章の横へ戻す */
+@media (min-width: 769px) {
 
+    .hero {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 60px !important;
+    }
+
+    .hero-text {
+        flex: 1 !important;
+        order: 1 !important;
+    }
+
+    .hero-image {
+        flex: 1 !important;
+        order: 2 !important;
+        width: auto !important;
+        margin: 0 !important;
+    }
+
+    .hero-image img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+    }
+
+}
 
 
 
