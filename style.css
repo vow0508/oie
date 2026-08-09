@@ -470,3 +470,39 @@ footer p {
 
     footer { padding: 35px 20px; }
 }
+
+
+
+
+
+/*==================================================
+  スマホ表示：トップ画像を一番上に変更
+==================================================*/
+
+@media (max-width: 768px) {
+
+    .hero {
+        display: flex !important;
+        flex-direction: column !important; /* 縦並びに指定 */
+    }
+
+    .hero-image {
+        order: 1 !important; /* 画像を1番目（一番上）に表示 */
+        width: 100% !important;
+        margin-bottom: 20px !important;
+    }
+
+    .hero-text {
+        order: 2 !important; /* 文章を2番目（画像の下）に表示 */
+        width: 100% !important;
+    }
+
+}
+
+
+
+
+
+
+
+
