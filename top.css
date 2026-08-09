@@ -35,21 +35,23 @@
     /* ② 写真
        ※ style.css側の order:1 をここで確実に上書き */
     .hero-image {
-        order: 2 !important;
-        display: block !important;
-        width: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        text-align: center !important;
-    }
+    order: 2 !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
 
-    .hero-image img {
-        display: block !important;
-        width: 90% !important;
-        max-width: none !important;
-        height: auto !important;
-        margin: 0 auto !important;
-    }
+.hero-image img {
+    display: block !important;
+    width: 90% !important;
+    max-width: none !important;
+    height: auto !important;
+
+    /* 画像の上下余白をここで決める */
+    margin: 0 auto !important;
+}
 
     /* ③ 説明文・ボタン */
     .hero-text p,
