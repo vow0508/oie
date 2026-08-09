@@ -557,6 +557,51 @@ footer p {
         margin-top: 0 !important;       /* 見出しの上の余白を完全消去 */
     }
 
+/*==================================================
+  スマホ表示：トップ余白の完全リセット（最優先設定）
+==================================================*/
+@media screen and (max-width: 768px) {
+
+    /* ヘッダー周りの余白を完全消去 */
+    header {
+        margin: 0 auto !important;
+        padding-top: 10px !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* ヒーローエリア全体の上の余白を完全消去 */
+    section.hero,
+    .hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        gap: 10px !important;
+    }
+
+    /* 画像エリアと画像本体の上下余白（20px等）を強制的に0にする */
+    .hero-image,
+    .hero-image img,
+    img.responsive-img,
+    .hero .responsive-img {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    /* 画像と文字の間の間隔調整 */
+    .hero-image {
+        margin-bottom: 10px !important;
+    }
+
+    /* 見出し（いい住まい選びは〜）の上の余白を消去 */
+    .hero-text h1,
+    h1 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+}
+
+  
 }
 
 
