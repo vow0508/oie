@@ -168,7 +168,9 @@
 .service > .container > .service-box:first-of-type {
     margin-top: 80px;
 }
-
+.service hr {
+    margin: 20px 0;
+}
 
 
 }
