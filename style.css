@@ -599,6 +599,142 @@ footer p {
         padding-top: 0 !important;
     }
 
+
+
+/* =========================================
+   IDEA PAGE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* ヘッダー */
+    body.idea-page header {
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    body.idea-page .logo {
+        width: 140px;
+        height: auto;
+    }
+
+    /* IDEAタイトル */
+    body.idea-page > .container:first-of-type {
+        width: 100%;
+        padding: 45px 20px 25px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    body.idea-page > .container:first-of-type h1 {
+        margin: 0 0 10px;
+        font-size: 42px;
+        line-height: 1.1;
+        color: #174a7c;
+    }
+
+    body.idea-page > .container:first-of-type .sub-title {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    /* IDEAの写真 */
+    body.idea-page .idea-image {
+        width: 100%;
+        margin: 25px auto 20px;
+        text-align: center;
+    }
+
+    body.idea-page .idea-image img {
+        display: block;
+        width: 100%;
+        max-width: 680px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* IDEA本文 */
+    body.idea-page .idea-text {
+        width: 100%;
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    body.idea-page .idea-text h2 {
+        margin: 25px 0 20px;
+        font-size: 27px;
+        line-height: 1.5;
+        color: #174a7c;
+    }
+
+    body.idea-page .idea-text p {
+        margin: 0 0 22px;
+        font-size: 17px;
+        line-height: 2;
+        color: #333;
+    }
+
+    /* 「私たちの願い」 */
+    body.idea-page .container {
+        width: 100%;
+        max-width: 680px;
+        padding: 0 20px;
+        margin: 50px auto 0;
+        box-sizing: border-box;
+    }
+
+    body.idea-page .container h2 {
+        margin: 30px 0 20px;
+        font-size: 28px;
+        line-height: 1.5;
+        color: #174a7c;
+    }
+
+    body.idea-page .container h4 {
+        margin: 30px 0 20px;
+        font-size: 22px;
+        color: #174a7c;
+    }
+
+    body.idea-page .container p {
+        font-size: 17px;
+        line-height: 2;
+        margin: 0 0 22px;
+    }
+
+    /* プロフィール */
+    body.idea-page .profile {
+        width: 100%;
+        max-width: 680px;
+        margin: 45px auto 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    body.idea-page .profile h2 {
+        color: #174a7c;
+    }
+
+    /* CTA */
+    body.idea-page .btn {
+        display: block;
+        width: fit-content;
+        margin: 35px auto 45px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+  
 }
 
   
