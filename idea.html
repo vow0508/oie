@@ -12,17 +12,15 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
 
-
-/* =========================
-   IDEAページ
-   ========================= */
-
-
-      <style>
+/* =========================================
+   IDEAページ専用
+   ========================================= */
 
 .idea-image {
     width: 800px;
+    max-width: 90%;
     margin: 40px auto 20px;
 }
 
@@ -31,10 +29,12 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+    border-radius: 10px;
 }
 
 .idea-text {
     width: 800px;
+    max-width: 90%;
     margin: 0 auto 60px;
     box-sizing: border-box;
 }
@@ -52,32 +52,157 @@
     margin: 0 0 22px;
 }
 
-.container {
+.idea > .container,
+.idea-last > .container {
     width: 800px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
 }
 
-.container h1 {
+.idea > .container h1 {
     text-align: center;
 }
 
-.container h2,
-.container h4 {
+.idea > .container .sub-title {
     text-align: center;
 }
 
-.container p {
+.idea-last > .container h2,
+.idea-last > .container h4 {
+    text-align: center;
+}
+
+.idea-last > .container p {
     text-align: left;
     line-height: 2;
+    margin-bottom: 22px;
 }
 
-.btn {
+.idea-last > .container .profile-name {
+    text-align: center;
+}
+
+.idea-last > .container .btn {
     display: block;
     width: fit-content;
     margin: 40px auto;
     text-align: center;
+}
+
+
+/* =========================================
+   スマホ
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .idea > .container,
+    .idea-last > .container {
+        width: 100%;
+        max-width: none;
+        padding: 0 20px;
+    }
+
+    .idea > .container {
+        padding-top: 30px;
+    }
+
+    .idea > .container h1 {
+        margin: 0 0 10px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .idea > .container .sub-title {
+        margin: 0 0 35px;
+        font-size: 15px;
+    }
+
+
+    /* 写真 */
+
+    .idea-image {
+        width: 100%;
+        max-width: none;
+        padding: 0 12px;
+        margin: 35px auto 22px;
+        box-sizing: border-box;
+    }
+
+    .idea-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+    /* 本文 */
+
+    .idea-text {
+        width: 100%;
+        max-width: none;
+        padding: 0 20px;
+        margin: 0 auto 50px;
+        box-sizing: border-box;
+    }
+
+    .idea-text h2 {
+        margin: 18px 0 25px;
+        font-size: 23px;
+        line-height: 1.55;
+        text-align: center;
+    }
+
+    .idea-text p {
+        margin: 0 0 24px;
+        font-size: 15px;
+        line-height: 2;
+        text-align: left;
+        color: #333;
+    }
+
+
+    /* 私たちの願い */
+
+    .idea-last > .container {
+        padding-top: 20px;
+    }
+
+    .idea-last > .container h2 {
+        margin: 30px 0 25px;
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .idea-last > .container h4 {
+        margin: 30px 0 20px;
+        font-size: 20px;
+    }
+
+    .idea-last > .container p {
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+
+    .idea-last > .container .profile-name {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    /* CTA */
+
+    .idea-last > .container .btn {
+        display: block;
+        width: fit-content;
+        margin: 35px auto 45px;
+        text-align: center;
+    }
+
 }
 
 </style>
@@ -88,6 +213,10 @@
 <body>
 
 
+<!-- =========================================
+     HEADER
+     ========================================= -->
+
 <header>
 
     <a href="index.html">
@@ -106,174 +235,25 @@
 
     <nav class="menu">
 
-        <a href="index.html">HOME</a>
-
-        <a href="service.html">SERVICE</a>
-
-        <a href="company.html">ABOUT</a>
-
-        <a href="idea.html">IDEA</a>
-
-        <a href="voice.html">VOICE</a>
-
-        <a href="https://forms.gle/HyXmBgncGQmBEbbC8">
-            CONTACT
+        <a href="index.html">
+            HOME
         </a>
 
-    </nav>
+        <a href="service.html">
+            SERVICE
+        </a>
 
-</header>
+        <a href="company.html">
+            ABOUT
+        </a>
 
-    /* 私たちの願い */
+        <a href="idea.html">
+            IDEA
+        </a>
 
-    .container {
-        width: 800px;
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }
-
-    .container h2,
-    .container h4 {
-        text-align: center;
-    }
-
-    .container p {
-        text-align: left;
-        line-height: 2;
-    }
-
-
-    /* プロフィール */
-
-    .profile {
-        width: 800px;
-        max-width: 90%;
-        margin: 60px auto 0;
-        box-sizing: border-box;
-    }
-
-    .profile h2 {
-        text-align: center;
-        color: #064a91;
-    }
-
-    .profile p {
-        text-align: left;
-        line-height: 2;
-    }
-
-
-    /* CTA */
-
-    .btn {
-        display: block;
-        width: fit-content;
-        margin: 40px auto;
-        text-align: center;
-    }
-
-}
-
-</style>
-/* =================================
-   IDEAページ・スマホ専用
-   ================================= */
-
-@media (max-width: 768px) {
-
-    /* ページタイトル */
-    .container {
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
-
-    .container h1 {
-        margin-top: 28px;
-        margin-bottom: 8px;
-        font-size: 32px;
-        line-height: 1.2;
-    }
-
-    .container .sub-title {
-        margin-bottom: 35px;
-        font-size: 15px;
-    }
-
-
-    /* 写真 */
-    .idea-image {
-        width: 100%;
-        padding: 0 12px;
-        margin: 35px auto 22px;
-        box-sizing: border-box;
-    }
-
-    .idea-image img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-
-    /* 本文 */
-    .idea-text {
-        padding: 0 20px;
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    .idea-text h2 {
-        margin: 18px 0 25px;
-        font-size: 23px;
-        line-height: 1.55;
-        color: #064a91;
-    }
-
-    .idea-text p {
-        margin: 0 0 24px;
-        font-size: 15px;
-        line-height: 2;
-        color: #333;
-    }
-
-
-
-<!-- ========================================= -->
-<!-- HEADER -->
-<!-- ========================================= -->
-    
-
-<header>
-
-    <a href="index.html">
-
-        <img src="logo.jpg"
-             alt="お家.com"
-             class="logo">
-
-    </a>
-
-    <div class="menu-toggle">
-
-        ☰
-
-    </div>
-
-    <nav class="menu">
-
-        <a href="index.html">HOME</a>
-
-        <a href="service.html">SERVICE</a>
-
-        <a href="company.html">ABOUT</a>
-
-        <a href="idea.html">IDEA</a>
-
-        <a href="voice.html">VOICE</a>
+        <a href="voice.html">
+            VOICE
+        </a>
 
         <a href="https://forms.gle/HyXmBgncGQmBEbbC8">
             CONTACT
@@ -284,44 +264,30 @@
 </header>
 
 
-
-<!-- ========================================= -->
-<!-- IDEA -->
-<!-- ========================================= -->
+<!-- =========================================
+     IDEA
+     ========================================= -->
 
 <section class="idea">
 
     <div class="container">
 
-    
-
-
-                      <h1 style="text-align:center;">
-        IDEA
-    </h1>
+        <h1>
+            IDEA
+        </h1>
 
         <p class="sub-title">
-
-  
- <p style="text-align:center;">
-       
             私たちの思想・理念。
-    </p>
+        </p>
 
-
-
-           
-         
-
-        
     </div>
 
 </section>
 
 
-<!-- ========================================= -->
-<!-- 情熱 -->
-<!-- ========================================= -->
+<!-- =========================================
+     情熱
+     ========================================= -->
 
 <section class="idea-section">
 
@@ -333,13 +299,12 @@
 
     </div>
 
+
     <div class="idea-text">
 
-   <section class="idea-section">
-
-    <h2 style="text-align:center;">
-        私たちの原動力は「情熱」です。
-    </h2>
+        <h2>
+            私たちの原動力は「情熱」です。
+        </h2>
 
         <p>
             私たちがお伝えしたいのは、
@@ -372,9 +337,11 @@
     </div>
 
 </section>
-<!-- ========================================= -->
-<!-- 約束 -->
-<!-- ========================================= -->
+
+
+<!-- =========================================
+     約束
+     ========================================= -->
 
 <section class="idea-section">
 
@@ -386,20 +353,17 @@
 
     </div>
 
+
     <div class="idea-text">
 
-     
-   <h2 style="text-align:center;">
-        たとえ100回、
+        <h2>
+            たとえ100回、
             同じ質問をされたとしても。
-    </h2>
+        </h2>
 
-   <h2 style="text-align:center;">
-         100回、笑顔で応えます。
-    </h2>
-
-       
-      
+        <h2>
+            100回、笑顔で応えます。
+        </h2>
 
         <p>
             みなさんは、
@@ -436,9 +400,10 @@
 
 </section>
 
-<!-- ========================================= -->
-<!-- 一期一会 -->
-<!-- ========================================= -->
+
+<!-- =========================================
+     一期一会
+     ========================================= -->
 
 <section class="idea-section">
 
@@ -450,14 +415,12 @@
 
     </div>
 
+
     <div class="idea-text">
 
-     
-
-   <h2 style="text-align:center;">
-        一期一会のご縁を大切に。
-    </h2>
-        
+        <h2>
+            一期一会のご縁を大切に。
+        </h2>
 
         <p>
             茶道には
@@ -505,18 +468,17 @@
 </section>
 
 
-<!-- ========================================= -->
-<!-- 私たちの願い -->
-<!-- ========================================= -->
+<!-- =========================================
+     私たちの願い
+     ========================================= -->
 
 <section class="idea-last">
 
     <div class="container">
 
-      
-              <h2 style="text-align:center;">
-        私たちの願い
-    </h2>
+        <h2>
+            私たちの願い
+        </h2>
 
         <p>
             住まいは、
@@ -528,112 +490,96 @@
             私たちは売ることを目的にするのではなく、
         </p>
 
-          <h4 style="text-align:center;">
-        「相談して良かった。」
-    </h4>
+        <h4>
+            「相談して良かった。」
+        </h4>
 
         <p>
             そう思っていただける仕事を
             目指しています。
         </p>
 
-      
-
-   <h2 style="text-align:center;">
-         情熱を持って。<br>
+        <h2>
+            情熱を持って。<br>
             誠実に。<br>
             一期一会を大切に。
-    </h2>
-
-
-
-
-
-           
-           
+        </h2>
 
         <p>
-
             それが、
             お家.com の理念です。
-
         </p>
 
+
         <br>
         <br>
-        
 
 
+        <!-- プロフィール -->
 
-           <h2 style="text-align:center;">
-        プロフィール
-    </h2>
+        <h2>
+            プロフィール
+        </h2>
 
-<p>
+        <p class="profile-name">
+            橘　剛
+        </p>
 
+        <p>
+            昭和40年生まれ。拓殖大学卒業後、司法書士事務所に勤務。
+            その後、不動産・建築業界へ転身し、
+            <strong>35年以上</strong>にわたり不動産・建築実務に携わる。
+        </p>
 
+        <p>
+            現在は、
+            <strong>宅地建物取引士・二級建築士</strong>として、
+            一人ひとりに寄り添った住まい選びをサポートしている。
+        </p>
 
+        <p>
+            長男は
+            <strong>開成高等学校から東京大学</strong>へ、
+            次男は
+            <strong>明治大学付属高等学校から明治大学</strong>へ進学。
+            二人の息子を育てる中で、
+            「親子とは何か」「夫婦とは何か」を問い続け、
+            その一つの答えとして、
+            小説<strong>『宅建ママ』</strong>を執筆。
+        </p>
 
-       <p style="text-align:center;">
-     橘　剛
-    </p>
-
-
-</p>
-<br>
-        <br>
-<p>
-
-昭和40年生まれ。拓殖大学卒業後、司法書士事務所に勤務。その後、不動産・建築業界へ転身し、<strong>35年以上</strong>にわたり不動産・建築実務に携わる。
-
-</p>
-
-<p>
-
-現在は、<strong>宅地建物取引士・二級建築士</strong>として、一人ひとりに寄り添った住まい選びをサポートしている。
-
-</p>
-
-<p>
-
-長男は<strong>開成高等学校から東京大学</strong>へ、次男は<strong>明治大学付属高等学校から明治大学</strong>へ進学。
-
-二人の息子を育てる中で、「親子とは何か」「夫婦とは何か」を問い続け、その一つの答えとして、小説<strong>『宅建ママ』</strong>を執筆。
-
-</p>
-
-<p>
-住まいは、家族の人生を育む大切な場所。住宅購入をお手伝いするだけでなく、一つひとつの家族の幸せを願いながら、お客様に寄り添い続けている。
-</p>
+        <p>
+            住まいは、家族の人生を育む大切な場所。
+            住宅購入をお手伝いするだけでなく、
+            一つひとつの家族の幸せを願いながら、
+            お客様に寄り添い続けている。
+        </p>
 
 
-          <a href="https://forms.gle/HyXmBgncGQmBEbbC8"
+        <!-- CTA -->
+
+        <a href="https://forms.gle/HyXmBgncGQmBEbbC8"
            class="btn">
 
             仲介料見積もりはこちら
 
         </a>
 
-
-
-        
     </div>
 
 </section>
 
 
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
+<!-- =========================================
+     FOOTER
+     ========================================= -->
 
 <footer>
 
     <div class="container">
 
         <p>
-
             © 2026 お家.com All Rights Reserved.
-
         </p>
 
     </div>
@@ -641,9 +587,9 @@
 </footer>
 
 
-<!-- ========================================= -->
-<!-- JavaScript -->
-<!-- ========================================= -->
+<!-- =========================================
+     JavaScript
+     ========================================= -->
 
 <script>
 
@@ -656,5 +602,7 @@ toggle.addEventListener("click", () => {
 
 </script>
 
+
 </body>
-</html>    
+
+</html>
