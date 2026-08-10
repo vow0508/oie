@@ -14,25 +14,113 @@ content="お家.comの思想・理念をご紹介します。情熱・誠実・�
 
 <link rel="stylesheet" href="style.css">
 
-    <style>
-/* IDEAページ：左右に余白を作る */
+<style>
+/* =================================
+   IDEAページ・スマホ専用
+   ================================= */
 
-.idea-text {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
+@media (max-width: 768px) {
 
-.idea-image {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-}
+    /* ページタイトル */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
 
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
+    .container h1 {
+        margin-top: 28px;
+        margin-bottom: 8px;
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .container .sub-title {
+        margin-bottom: 35px;
+        font-size: 15px;
+    }
+
+
+    /* 写真 */
+    .idea-image {
+        width: 100%;
+        padding: 0 12px;
+        margin: 35px auto 22px;
+        box-sizing: border-box;
+    }
+
+    .idea-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+    /* 本文 */
+    .idea-text {
+        padding: 0 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .idea-text h2 {
+        margin: 18px 0 25px;
+        font-size: 23px;
+        line-height: 1.55;
+        color: #064a91;
+    }
+
+    .idea-text p {
+        margin: 0 0 24px;
+        font-size: 15px;
+        line-height: 2;
+        color: #333;
+    }
+
+
+    /* 「私たちの願い」 */
+    .container h2 {
+        margin-top: 55px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        line-height: 1.5;
+        color: #064a91;
+    }
+
+    .container h4 {
+        margin: 30px 0 20px;
+        font-size: 19px;
+        color: #064a91;
+    }
+
+    .container p {
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 24px;
+    }
+
+
+    /* プロフィール */
+    .profile {
+        padding: 0 20px;
+        margin-top: 55px;
+        box-sizing: border-box;
+    }
+
+    .profile h2 {
+        color: #064a91;
+    }
+
+
+    /* CTA */
+    .btn {
+        display: block;
+        width: fit-content;
+        margin: 35px auto 50px;
+        text-align: center;
+    }
+
 }
 </style>
 
