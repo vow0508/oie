@@ -13,6 +13,32 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="service.css">
   
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-984110072"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-984110072');
+</script>
+
+
+
+
+
+<!-- Event snippet for お問い合わせボタン conversion-->
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[href*="/forms.gle/"]').forEach(function (link) {
+      link.addEventListener("click", function () {
+        gtag("event", "conversion", {
+          send_to: "AW-984110072/GGG0CJ3yg-scEPinodUD",
+        });
+      });
+    });
+  });
+</script>
 
 </head>
 
