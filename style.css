@@ -192,14 +192,33 @@ p {
     margin-bottom: 35px;
 }
 
+
+
+
 .inspection-photo {
+    display: block;
     width: 100%;
-    max-width: 700px;
-    margin: 40px auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.18);
-    transition: .3s;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .inspection-photo:hover {
     transform: scale(1.03);
