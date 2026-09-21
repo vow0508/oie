@@ -196,15 +196,18 @@ p {
 
 
 .inspection-photo {
-    display: block !important;
-    width: 100vw !important;
-    max-width: none !important;
-    height: auto !important;
-    margin-left: calc(50% - 50vw) !important;
-    margin-right: 0 !important;
-    border-radius: 0 !important;
+    display: block;
+    width: 100%;
+    max-width: 700px; /* お好みの最大幅に設定してください */
+    height: auto;
+    margin: 0 auto 30px; /* 上下中央揃え ＋ 下に少し余白 */
+    border-radius: 8px;  /* 必要に応じて角丸など（不要なら削除可） */
+    transition: transform 0.3s ease;
 }
 
+.inspection-photo:hover {
+    transform: scale(1.03);
+}
 
 
 
