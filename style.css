@@ -872,41 +872,7 @@ header {
         font-size: 12px;
     }
 
-@media (min-width: 769px) {
-  section.hero {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    width: 100% !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding: 40px 20px !important;
-    gap: 40px !important;
-  }
-
-  section.hero > .hero-text {
-    flex: 1 1 50% !important;
-    width: auto !important;
-    min-width: 0 !important;
-  }
-
-  section.hero > .inspection {
-    flex: 1 1 50% !important;
-    width: auto !important;
-    min-width: 0 !important;
-  }
-
-  section.hero > .inspection img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  section.hero > .hero-text h1 {
-    white-space: normal !important;
-    overflow-wrap: anywhere;
-  }
-}
+ }
 
   
 
