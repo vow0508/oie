@@ -132,13 +132,12 @@ p {
 /*==================================================
   HERO（PC表示：左右横並び）
 ==================================================*/
-
 .hero {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
-  　align-items: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 60px;
 }
@@ -149,18 +148,7 @@ p {
 
 .hero-image {
     flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0,0,0,.15);
-}
-
-.hero-note {
-    margin-top: 20px;
-    font-size: 15px;
-    color: #555;
+    margin-top: 0;
 }
 
 /*==================================================
