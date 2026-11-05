@@ -250,3 +250,23 @@ a { color: inherit; }
   .hero-copy, .hero-caption, .section-heading, .service-item, .service-cta, .contact-band, .inspection-copy { padding-left: 18px; padding-right: 18px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Hero artwork supplied by the user */
+.hero-art { position: relative; width: 100%; }
+.hero-art img { width: 100%; height: auto; }
+.hero-art-cta {
+  position: absolute;
+  left: 8%;
+  top: 47.5%;
+  width: 84%;
+  height: 9%;
+  display: block;
+  z-index: 2;
+  border-radius: 8px;
+}
+.hero-art-cta:focus-visible { outline: 3px solid #d8a94b; outline-offset: 3px; }
+.hero-following-photo { margin: 0; }
+@media (min-width: 760px) {
+  .hero-art { max-width: 1164px; margin: 0 auto; }
+  .hero-art-cta { border-radius: 10px; }
+}
