@@ -860,6 +860,32 @@ header {
         font-size: 12px;
     }
 
+
+
+/* スマホ：トップ画像を画面幅いっぱいに表示 */
+@media screen and (max-width: 768px) {
+
+    .hero-image {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        margin-right: calc(50% - 50vw) !important;
+        padding: 0 !important;
+    }
+
+    .hero-image img,
+    .hero-image img.responsive-img {
+        display: block !important;
+        width: 100% !important;
+        max-width: none !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+  
  }
 
  
