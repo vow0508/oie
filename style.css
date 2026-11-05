@@ -862,46 +862,13 @@ header {
 
  }
 
+ 
+  
 
-/* =========================================
-   TOP HERO IMAGE + CLICKABLE CTA
-   ========================================= */
-.hero-promo {
-    position: relative;
-    width: 100%;
-    max-width: 1164px;
-    margin: 0 auto;
-    line-height: 0;
-}
 
-.hero-promo-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
 
-.hero-promo-cta {
-    position: absolute;
-    left: 8%;
-    top: 24.1%;
-    width: 84%;
-    height: 4.4%;
-    display: block;
-    overflow: hidden;
-    text-indent: -9999px;
-    border-radius: 2vw;
-    z-index: 2;
-}
 
-.hero-promo-cta:focus-visible {
-    outline: 3px solid #d6a94d;
-    outline-offset: 3px;
-}
 
-@media (min-width: 900px) {
-    .hero-promo-cta {
-        border-radius: 12px;
-    }
-}
+
+
+
