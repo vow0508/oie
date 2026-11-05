@@ -1,790 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="お家.com｜仲介手数料無料と建築士による住宅診断で、納得できる住まい選びをサポートします。">
+  <title>お家.com｜仲介手数料無料と住宅診断</title>
+  <link rel="stylesheet" href="style.css">
 
-<meta charset="UTF-8">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5256FCTDNK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5256FCTDNK');
+  </script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>お家.com</title>
-
-<meta name="description" content="お家.com【公式】｜宅地建物取引士と建築士のダブルライセンスで、よりよい住まい選びをサポートします。">
-
-<!-- Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5256FCTDNK"></script>
-
-<script>
-
-window.dataLayer = window.dataLayer || [];
-
-function gtag(){dataLayer.push(arguments);}
-
-gtag('js', new Date());
-
-gtag('config','G-5256FCTDNK');
-
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-984110072"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-984110072');
-</script>
-
-
-
-
-
-<!-- Event snippet for お問い合わせボタン conversion-->
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('[href*="/forms.gle/"]').forEach(function (link) {
-      link.addEventListener("click", function () {
-        gtag("event", "conversion", {
-          send_to: "AW-984110072/GGG0CJ3yg-scEPinodUD",
+  <!-- Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-984110072"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-984110072');
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('a[href*="forms.gle"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              send_to: 'AW-984110072/GGG0CJ3yg-scEPinodUD'
+            });
+          }
         });
       });
     });
-  });
-</script>
-
-<link rel="stylesheet" href="style.css">
-
-<style>
-.baka-section {
-  width: 100%;
-  padding: 35px 15px;
-  box-sizing: border-box;
-  background: #f7f7f7;
-}
-
-.baka-section h2 {
-  margin: 0 0 30px;
-  padding: 18px 10px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #fff;
-  background: #111;
-  border-radius: 10px;
-}
-
-.qa {
-  background: #fff;
-  margin-bottom: 22px;
-  padding: 20px 16px;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-}
-
-.question {
-  margin: 0 0 12px;
-  font-size: 22px;
-  line-height: 1.6;
-  font-weight: bold;
-  color: #111;
-}
-
-.answer {
-  margin: 6px 0;
-  font-size: 22px;
-  line-height: 1.6;
-  font-weight: bold;
-  color: #d60000;
-}
-
-@media (max-width: 480px) {
-  .baka-section h2 {
-    font-size: 28px;
-  }
-
-  .question,
-  .answer {
-    font-size: 20px;
-  }
-}
-
-.check-title {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 25px 0 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .inspection {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-  }
-
-  .inspections .responsive-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-}
-</style>
-
+  </script>
 </head>
 
 <body>
-
-<!-- ========================================= -->
-<!-- HEADER -->
-<!-- ========================================= -->
-
-<header>
-
-<a href="index.html"
-   style="display:block; flex-shrink:0; margin-bottom:15px;">
-
-    <img src="eXp.png"
-         alt="お家.com"
-         class="logo"
-         style="display:block; width:110px; max-width:100%; height:auto;">
-
-</a>
-
-    <div class="menu-toggle">
-
-        ☰
-
-    </div>
-
-    <nav class="menu">
-
-        <a href="index.html">トップ</a>
-
-        <a href="service.html">サービス</a>
-
-        <a href="idea.html">理念</a>
-        
-        <a href="voice.html">お客様の声</a>
-
-        <a href="https://forms.gle/HyXmBgncGQmBEbbC8">お問い合わせ </a>
-        
-        <a href="company.html">会社概要</a>
-
-    </nav>
-
-</header>
-
-
-<!-- ========================================= -->
-<!-- HERO -->
-<!-- ========================================= -->
-
-<section class="hero">
-
-    <!-- 左側（スマホでは下）：文章エリア -->
-    <div class="hero-text">
-<h1 style="font-size: clamp(20px, 4.5vw, 30px); line-height: 1.5; font-weight: bold;">
-    宅建士と建築士による不動産仲介。<br>
-    <span style="color: #0b3a77;">理想を現実。</span>妥協しない住まい探し。
-</h1>
-
-     
-<p style="color: #0000ff;">
-あなたは、不動産購入にあたり、「大手だから安心」だと、思っていませんか？ 不動産仲介は、そのほとんどか、仲介大手が売主ではありません。中古戸建て、新築戸建て、 建物の構造を知らない営業マンが多いのも事実です。 つまり、これからの不動産仲介は、建築の知識が必要だと言うことです。 仲介手数料無料は、中小不動産会社であれば、どこでもできます。しかし、インスペクション は、相当の知見が必要です。私は、三井のリハウスのインスペクション講習の講師を26回 やりました。これからは、建物の時代です。日本で初めて、米国からインスペクション を導入した、三井不動産。 私は、建築士として、そのグループ会社に従事して参りました。首都圏に私のような経歴 をもつ者を知りません。 宅建士と建築士。タプルライセンスは、これからの常識です。
-  
-</p>
-
-<p style="color: #0000ff;">
-あなたが、気になる物件の仲介手数料がお得になるかもしれません。<br>
-先ずは、仲介手数料の見積もり！<br>
-1分で終わります。
-  
-</p>
-
-<div style="text-align: center;">
-
-<a href="https://forms.gle/HyXmBgncGQmBEbbC8"
-   class="btn">
-    仲介料見積もりはこちら
-</a>
-<p style="font-size: 22px; line-height: 1.6; font-weight: bold; text-align: center; margin: 25px 0;">
-    <span style="color: #0000ff;">購入前に、建物をチェック。</span><br>
-    <span style="color: #ff0000;">安心して、家を選びませんか。</span>
-</p>    
-
-   </div>
-
-    </div><!-- ← ここでしっかりhero-textを閉じる -->
-
-    <!-- 右側（スマホでは上）：画像エリア -->
-<div class="hero-image">
-    <img src="top.jpg"
-         alt="あなた"
-         class="responsive-img">
-</div>
-</section>
-
-
-<!-- ========================================= -->
-<!-- 黒船 -->
-<!-- ========================================= -->
-
-<section class="inspection">
-
-    <img src="expkuro.jpg"
-         alt="ホームインスペクション"
-         class="responsive-img">
-
-</section>
-
-<br>
-
-<!-- ========================================= -->
-<!-- インスペクション -->
-<!-- ========================================= -->
-
-<section class="inspection">
-
-    <img src="insp10.jpg"
-         alt="ホームインスペクション"
-         class="responsive-img">
-
-</section>
-
-<br>
-  <div class="hero-text" style="text-align: center;">
-
-<a href="https://forms.gle/HyXmBgncGQmBEbbC8"
-   class="btn">
-    仲介料見積もりはこちら
-</a>
-
-   </div>
-
-
-<!-- ========================================= -->
-<!-- 3か条 -->
-<!-- ========================================= -->
-<br>
-
-<section class="inspection">
-
-    <img src="san10.jpg"
-         alt="3か条"
-         class="responsive-img">
-
-</section>
-
-
-
-<!-- ========================================= -->
-<!-- 仲介手数料 -->
-<!-- ========================================= -->
-<br>
-
-<section class="inspection">
-
-    <img src="tyk.jpg"
-         alt="仲介手数料無料"
-         class="responsive-img">
-
-</section>
-
-
-
-<!-- ========================================= -->
-<!-- おばか -->
-<!-- ========================================= -->
-
-<section class="baka-section">
-
-  <h2>仲介あるある</h2>
-
-  <div class="qa">
-    <p class="question">Q いい物件は、大手からじゃないと買えない</p>
-    <p class="answer">A レインズ登録物件は、どこの業者でも買える</p>
-  </div>
-
-  <div class="qa">
-    <p class="question">Q おいしい物件は、大手が握っている</p>
-    <p class="answer">A 原則、物件を公開しないのは、違法行為</p>
-  </div>
-
-  <div class="qa">
-    <p class="question">Q 仲介手数料は法律で決まっている</p>
-    <p class="answer">A 法律は、上限を決めている。無料・割引できる。</p>
-  </div>
-
-  <div class="qa">
-    <p class="question">Q 知らない業者だから不安</p>
-    <p class="answer">A 当社、米国NASDAQ上場会社</p>
-    <p class="answer">A 世界30カ国以上、9万人以上のエージェントが所属</p>
-  </div>
-
-</section>
-
-
-<!-- ========================================= -->
-<!-- ご用心 -->
-<!-- ========================================= -->
-
-<br>
-
-<section class="inspection">
-
-    <img src="you.jpg"
-         alt="仲介手数料無料"
-         class="responsive-img">
-
-</section>
-
-<!-- ========================================= -->
-<!-- 本音 -->
-<!-- ========================================= -->
-
-<br>
-
-<section class="inspection">
-
-    <img src="hon.jpg"
-         alt="営業マンの本音"
-         class="responsive-img">
-
-</section>
-
-<!-- ========================================= -->
-<!-- こんな物件買いますか -->
-<!-- ========================================= -->
-
-  <br>
-
-<section class="inspection">
-
-    <img src="kon.jpg"
-         alt="仲介手数料無料"
-         class="responsive-img">
-
-</section>
-
-<!-- ========================================= -->
-<!-- プロチェック-->
-<!-- 傾斜測定 -->
-<!-- ========================================= -->
-
-<section class="inspection-check">
-
-    <div class="container">
-
-        <h2>建物プロチェック</h2>
-
-        <h3 class="check-title">屋内傾斜測定</h3>  
-  
-        <!-- classを追加し、styleタグを簡潔に修正 -->
-        <img src="abc5.jpg" alt="屋内傾斜測定" class="inspection-photo">
-
-        <h2 style="color:#064a91; text-align:center;">
-            屋内傾斜測定
-        </h2>
-
-        <p style="text-align:center;">
-            レーザー測定器を使用し、<br>
-            建物内部の柱の傾斜を確認します。
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ========================================= -->
-<!-- プロチェック-->
-<!-- 床下の湿気 -->
-<!-- ========================================= -->
-
-<section class="inspection-check">
-
-    <div class="container">
-
-        <h2>建物プロチェック</h2>
-
-      <h3 class="check-title" style="text-align: center;">
-    床下をチェック
-</h3>
-
- <!-- 新築・漏水事例 -->
-        <h3 style="text-align:center; font-size:30px; margin:30px 0 20px;">
-            あっ、新築一戸建て、なのに漏水！
-        </h3>
-
-        <img src="ros.jpg"
-             alt="新築一戸建て・キッチン床下の排水管からの漏水"
-             class="inspection-photo">
-
-        <p style="text-align:center; font-size:20px; font-weight:bold; margin-top:25px;">
-            新築一戸建て・キッチン床下の排水管から漏水
-        </p>
-
-        <p style="text-align:center;">
-            写真は、キッチン床下の排水管の様子です。
-        </p>
-
-        <p style="text-align:center;">
-            土間に漏水跡、排水管からは、水滴。
-        </p>
-
-        <p style="text-align:center;">
-            当初、売主は「ボンドです」と説明していました。
-        </p>
-
-        <p style="text-align:center;">
-            写真を見せて、説明。
-        </p>
-
-        <p style="text-align:center;">
-            売主も納得せざるを得なかった事例です。
-        </p>
-
-        <img src="yukasita-moisture.jpg"
-             alt="床下の湿気測定"
-             class="inspection-photo">
-
-       <p style="text-align:center;">
-木部の含水率99.9%  異常な数値です。
-</p>
-        
-        <p style="text-align:center;">
-床下は普段見ない場所です。
-</p>
-
-<p style="text-align:center;">
-湿気が多いと、建物の寿命を縮める原因になることがあります。
-</p>
-
-     <p style="text-align:center;">
-建築士が床下点検口から確認し、
-</p>
-
-<p style="text-align:center;">
-土間や木部の湿気を測定します。
-</p>
-
-    <img src="yuka.jpg"
-         alt="床下で建物調査を行う建築士"
-         class="inspection-photo">
-
-<ul style="
-    list-style: none;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 14px 22px;
-    text-align: left;
-    background: #eef6ff;
-    border-radius: 10px;
-    color: #174a7c;
-    line-height: 2;
-">
-    <li>✔ 土間の湿気</li>
-    <li>✔ 木部の含水率</li>
-    <li>✔ カビ・腐朽菌の有無</li>
-    <li>✔ シロアリ被害の兆候</li>
-</ul>
-
-<p style="text-align:center;">
-    <br>
-    <br>
-    
-※ 点検口から確認できる範囲の簡易チェックとなります。
-</p>
-
-<p style="font-weight: 700; color: #8B0000; letter-spacing: -0.02em;">
-    建築士の欠陥住宅<span style="letter-spacing: -0.12em;">チェックリスト</span><br>
-    
-    無料配布中<br>
-    <a href="https://forms.gle/HyXmBgncGQmBEbbC8"
-       style="color: #8B0000; text-decoration: underline;">
-      ［チェックリストを無料で受け取る］
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="お家.com トップ">
+      <img src="eXp.png" alt="お家.com" class="brand-logo">
     </a>
-</p>
+    <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="global-menu" id="global-menu" aria-label="メインメニュー">
+      <a href="#top">トップ</a>
+      <a href="#service">サービス</a>
+      <a href="#inspection">住宅診断</a>
+      <a href="#fee">仲介手数料</a>
+      <a href="service.html">サービス詳細</a>
+      <a href="idea.html">理念</a>
+      <a href="voice.html">お客様の声</a>
+      <a href="company.html">会社概要</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
 
-    </div>
+  <main id="top">
+    <!-- メインビジュアル：top.jpg 内のCTA位置に透明リンクを重ねています -->
+    <section class="hero" aria-label="お家.comのサービス">
+      <div class="hero-image-wrap">
+        <img src="top.jpg" class="hero-image" alt="仲介手数料無料と住宅診断。三井不動産グループ出身の建築士が住宅の内覧に同行。">
+        <a class="hero-image-cta" href="https://forms.gle/HyXmBgncGQmBEbbC8"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="仲介手数料の見積もりを依頼する">仲介手数料の見積もりを依頼する</a>
+      </div>
+    </section>
 
-</section>
-
-<!-- ========================================= -->
-<!-- プロチェック10選 #7 -->
-<!-- 屋根裏・野地板 -->
-<!-- ========================================= -->
-
-<section class="inspection-check">
-
-    <div class="container">
-
-        <h2>建物プロチェック</h2>
-
-      <h3 class="check-title">小屋裏状況</h3>
-
-<p style="text-align:center;">
-新築住宅でも、小屋裏で結露が発生することがあります。
-</p>
-
-        <img src="yajita64.jpg"
-             alt="野地板の含水率測定"
-             class="inspection-photo">
-
-        <div class="measurement-box">
-
-            <p class="measurement-title">
-                実際の測定例
-            </p>
-
-            <p class="measurement-label">
-                野地板含水率
-            </p>
-
-            <p class="measurement-number">
-                <span>64.6％</span>
-            </p>
-
+    <section class="intro section">
+      <div class="content-width">
+        <p class="eyebrow">OUR SERVICES</p>
+        <h1>費用も、建物も。<br>納得できる住まい選びを。</h1>
+        <p class="section-lead">お家.comは、不動産仲介と建築士による住宅診断の両面から、住まい探しをサポートします。</p>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="card-kicker">01 / REAL ESTATE</span>
+            <h2>不動産仲介・仲介手数料</h2>
+            <p>気になる物件が見つかったら、まずは物件URLをお送りください。物件ごとに仲介手数料を確認し、お見積もりをご案内します。</p>
+            <a class="text-link" href="#fee">仲介手数料について <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service-card">
+            <span class="card-kicker">02 / HOME INSPECTION</span>
+            <h2>建築士による住宅診断</h2>
+            <p>建築士が住宅の内覧に同行し、目視できる範囲で建物の状態を確認。購入前に気になる点を把握するお手伝いをします。</p>
+            <a class="text-link" href="#inspection">住宅診断について <span aria-hidden="true">→</span></a>
+          </article>
         </div>
+        <p class="small-note">※仲介手数料無料の対象となる物件には条件があります。すべての物件が無料になるわけではありません。<br>※住宅診断は建築士による任意の簡易的な確認サービスであり、宅地建物取引業法に基づく建物状況調査ではありません。</p>
+      </div>
+    </section>
 
-      <p style="text-align:center;">
-結露が確認された場合は、
-</p>
+    <section class="image-section section section-soft">
+      <div class="content-width">
+        <p class="eyebrow">OUR POLICY</p>
+        <h2 class="section-title">お家.comが大切にすること</h2>
+        <img src="insp10.jpg" alt="ホームインスペクションのご案内" class="content-image">
+        <img src="san10.jpg" alt="お家.comのサービスの3か条" class="content-image">
+        <img src="tyk.jpg" alt="仲介手数料無料について" class="content-image">
+      </div>
+    </section>
 
-<p style="text-align:center;">
-原因を確認することが大切です。
-</p>
+    <section class="section section-soft" id="real-estate-faq">
+      <div class="content-width">
+        <p class="eyebrow">REAL ESTATE KNOWLEDGE</p>
+        <h2 class="section-title">仲介あるある</h2>
+        <div class="qa-grid">
+          <article class="qa-card">
+            <h3>いい物件は、大手からじゃないと買えない？</h3>
+            <p>レインズ登録物件は、原則として他の不動産会社からも紹介を受けられます。</p>
+          </article>
+          <article class="qa-card">
+            <h3>おいしい物件は、大手が握っている？</h3>
+            <p>物件情報の公開や取引にはルールがあります。気になる物件があればご相談ください。</p>
+          </article>
+          <article class="qa-card">
+            <h3>仲介手数料は法律で決まっている？</h3>
+            <p>法律で定められているのは上限額です。取引条件により無料や割引となる場合があります。</p>
+          </article>
+          <article class="qa-card">
+            <h3>知らない不動産会社だから不安？</h3>
+            <p>お家.comは、米国NASDAQ上場の不動産ネットワークに所属するエージェントとして活動しています。詳しくはお問い合わせください。</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<img src="ketsuro.jpg"
-     alt="小屋裏の結露"
-     class="inspection-photo">
+    <section class="section">
+      <div class="content-width">
+        <p class="eyebrow">REAL ESTATE</p>
+        <h2 class="section-title">不動産仲介について</h2>
+        <img src="you.jpg" alt="不動産仲介についてのご案内" class="content-image">
+        <img src="hon.jpg" alt="不動産営業について知っておきたいこと" class="content-image">
+        <img src="kon.jpg" alt="物件選びについてのご案内" class="content-image">
+      </div>
+    </section>
 
-      <ul style="
-    list-style: none;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 14px 22px;
-    text-align: left;
-    background: #eef6ff;
-    border-radius: 10px;
-    color: #174a7c;
-    line-height: 2;
-">
-    <li>✔ 結露の有無</li>
-    <li>✔ カビ・腐朽菌の発生</li>
-    <li>✔ 雨漏りとの違いを確認</li>
+    <section class="section section-soft" id="inspection">
+      <div class="content-width">
+        <p class="eyebrow">HOME INSPECTION</p>
+        <h2 class="section-title">建築士による住宅診断</h2>
+        <p class="section-lead">内覧時に確認できる範囲で、建物の状態や気になる点をチェックします。</p>
+
+        <article class="inspection-item">
+          <h3>屋内傾斜測定</h3>
+          <img src="abc5.jpg" alt="レーザー測定器による屋内傾斜測定" class="content-image">
+          <p>レーザー測定器を使用し、建物内部の柱などの傾斜を確認します。</p>
+        </article>
+
+        <article class="inspection-item">
+          <h3>床下の湿気・漏水チェック</h3>
+          <h4>新築一戸建てでも、床下で漏水が見つかった事例があります。</h4>
+          <img src="ros.jpg" alt="新築一戸建てのキッチン床下排水管からの漏水事例" class="content-image">
+          <p>写真は、キッチン床下の排水管の様子です。土間に漏水跡があり、排水管から水滴が確認されました。当初、売主は「ボンドです」と説明していましたが、写真を見せて説明し、売主も納得せざるを得なかった事例です。</p>
+          <img src="yukasita-moisture.jpg" alt="床下の木部含水率測定" class="content-image">
+          <p class="emphasis">木部の含水率99.9%。異常な数値です。</p>
+          <p>床下は普段見ることのない場所です。湿気が多いと、建物の寿命を縮める原因になることがあります。建築士が床下点検口から確認し、土間や木部の湿気を測定します。</p>
+          <img src="yuka.jpg" alt="床下で建物調査を行う建築士" class="content-image">
+          <ul class="check-list">
+            <li>土間の湿気</li>
+            <li>木部の含水率</li>
+            <li>カビ・腐朽菌の有無</li>
+            <li>シロアリ被害の兆候</li>
           </ul>
-<br>
-        <h3>放置すると…</h3>
+          <p class="small-note">※点検口から確認できる範囲の簡易チェックとなります。</p>
+          <p class="resource-link"><strong>建築士の欠陥住宅チェックリスト 無料配布中</strong><br>
+            <a href="https://forms.gle/HyXmBgncGQmBEbbC8" target="_blank" rel="noopener noreferrer">チェックリストを無料で受け取る →</a>
+          </p>
+        </article>
 
-       <ul class="danger-list"
-    style="width: fit-content; margin: 0 auto; text-align: left;">
-    <li>木材の腐朽</li>
-    <li>カビの発生</li>
-    <li>断熱材への影響</li>
-    <li>建物寿命への影響</li>
-</ul>
+        <article class="inspection-item">
+          <h3>小屋裏・野地板の状態</h3>
+          <p>新築住宅でも、小屋裏で結露が発生することがあります。</p>
+          <img src="yajita64.jpg" alt="野地板の含水率測定" class="content-image">
+          <div class="measurement">
+            <span>実際の測定例</span>
+            <strong>野地板含水率</strong>
+            <b>64.6<small>％</small></b>
+          </div>
+          <p>結露が確認された場合は、原因を確認することが大切です。</p>
+          <img src="ketsuro.jpg" alt="小屋裏の結露" class="content-image">
+          <ul class="check-list">
+            <li>結露の有無</li>
+            <li>カビ・腐朽菌の発生</li>
+            <li>雨漏りとの違いを確認</li>
+          </ul>
+          <h4>放置すると、木材の腐朽・カビの発生・断熱材への影響・建物寿命への影響につながることがあります。</h4>
+          <p class="small-note">※小屋裏調査は、点検口や安全性などの条件により実施できない場合があります。安全に確認できる場合に限り調査します。</p>
+        </article>
+      </div>
+    </section>
 
-<p style="text-align:center; color:#cc0000;">
-    ※ 小屋裏調査は、棚を壊す恐れがあるため、原則として行っていません。<br>
-    ただし、点検口が安全に確認できる場合は、調査を行います。
-</p>
+    <section class="section">
+      <div class="content-width">
+        <p class="eyebrow">BUYER SUPPORT</p>
+        <h2 class="section-title">物件の囲い込みについて</h2>
+        <h3 class="section-subtitle">気になる物件を紹介してもらえないことがあります。</h3>
+        <img src="kklo.jpg" alt="不動産物件の囲い込みについて" class="content-image">
+        <p>「商談中です」「申込みが入りました」と言われ、気になる物件を紹介してもらえないことがあります。一部の不動産会社では、他社からの購入申込みを受け付けないなど、不適切な対応が問題となることがあります。</p>
+        <p>弊社のお客様からも、このようなご相談をいただいております。気になる物件がございましたら、お気軽にご相談ください。</p>
+        <p class="small-note">※囲い込みの解明には、お客様からの情報やご協力が必要となります。</p>
+      </div>
+    </section>
 
-<!-- ========================================= -->
-<!-- プロチェック-->
-<!-- 囲い込み -->
-<!-- ========================================= -->
+    <section class="section section-soft" id="fee">
+      <div class="content-width">
+        <p class="eyebrow">BROKERAGE FEE</p>
+        <h2 class="section-title">仲介手数料について</h2>
+        <img src="shi2.png" alt="不動産仲介のしくみと仲介手数料無料のケース" class="content-image content-image-wide">
+        <div class="fee-copy">
+          <p><strong>新築一戸建て・リノベーションマンション</strong>は、条件により仲介手数料がお得になります。</p>
+          <p><strong>中古戸建・土地</strong>は、半額・割引でご案内しております。</p>
+          <p class="small-note">※対象物件・条件があります。詳しくはお気軽にお問い合わせください。<br>※まずは物件のURLをお送りください。</p>
+        </div>
+        <a class="primary-button" href="https://forms.gle/HyXmBgncGQmBEbbC8" target="_blank" rel="noopener noreferrer">仲介手数料の見積もりを依頼する <span aria-hidden="true">↗</span></a>
+        <div class="fee-reasons">
+          <h3>どうして、仲介手数料をお得にできるの？</h3>
+          <p>仲介手数料をお得にするために、サービスの質を落としているわけではありません。従来の不動産会社とは、利益の作り方そのものが違います。</p>
+          <ol>
+            <li>両手仲介に依存しない</li>
+            <li>片手仲介でも成り立つビジネスモデル</li>
+            <li>広告宣伝費を50％削減</li>
+            <li>業務のDX化・テレワークの導入</li>
+            <li>1階の路面店を持たない</li>
+            <li>固定費を抑えるエージェント制の採用</li>
+            <li>仲介手数料の割引は、会社の承認が必要</li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-<h1 style="text-align:center; color:#0B3B75;">
-    物件の囲い込み
-</h1>
+    <section class="section legal-section">
+      <div class="content-width">
+        <p class="eyebrow">IMPORTANT INFORMATION</p>
+        <h2 class="section-title">サービスに関するご案内</h2>
+        <ul class="legal-list">
+          <li>本インスペクションは、宅地建物取引業法に基づく「建物状況調査」ではありません。</li>
+          <li>当方のインスペクションは簡易的なチェックであり、劣化事象等の見落としがあった場合でも、その責任を一切負いません。</li>
+          <li>インスペクションは、すべての物件を対象とするものではありません。1物件に対する購入の意思表示が条件です。</li>
+          <li>インスペクションは、お客様への好意として行う無料の確認サービスです。</li>
+          <li>責任を伴う詳細な調査をご希望のお客様は、有料のインスペクションをご利用ください。</li>
+        </ul>
+      </div>
+    </section>
 
-    <h3>
-        気になる物件を<br>
-        紹介してもらえないことがあります
-    </h3>
+    <section class="contact-band" id="contact">
+      <div class="content-width contact-inner">
+        <div>
+          <p class="eyebrow">CONTACT</p>
+          <h2>気になることから、<br>お聞かせください。</h2>
+          <p>気になる物件のURLをお送りください。仲介手数料のお見積もりや住宅診断についてご案内します。</p>
+        </div>
+        <a class="contact-button" href="https://forms.gle/HyXmBgncGQmBEbbC8" target="_blank" rel="noopener noreferrer">仲介手数料の見積もりを依頼する <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-    <p class="lead" style="text-align:center;">
-        「商談中です」「申込みが入りました」と言われ、
-        気になる物件を紹介してもらえないことがあります。
-    </p>
-
-    <img src="kklo.jpg"
-         alt="物件の囲い込みについて"
-         class="inspection-photo">
-
-    <p style="text-align:center;">
-        一部の不動産会社では、
-        他社からの購入申込みを受け付けないなど、
-        不適切な対応が問題となることがあります。
-    </p>
-
-    <p style="text-align:center;">
-        弊社のお客様からも、
-        このようなご相談をいただいております。
-    </p>
-
-    <p style="text-align:center;">
-        気になる物件がございましたら、
-        お気軽にご相談ください。
-    </p>
-
-    <p class="note" style="text-align:center;">
-        ※ 囲い込みの解明には、お客様からの情報やご協力が必要となります。
-    </p>
-
-<br>
-    <br>
-    
-<h1 style="color:#8B0000; text-align:center;">
-    仲介手数料について
-</h1>
-
-<div style="
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    text-align: center;
-">
-    <img src="shi2.png"
-         alt="不動産仲介のしくみ・仲介手数料無料のケース"
-         style="
-            display: block;
-            width: 100%;
-            max-width: 900px;
-            height: auto;
-            margin: 0 auto;
-          ">
-</div>
-
-<br>
-
-    <p>
-        <strong>新築一戸建て・リノベーションマンション</strong>は、
-        条件により<strong>仲介手数料がお得</strong>になります。
-    </p>
-
-    <p>
-        <strong>中古戸建・土地</strong>は、
-        <strong>半額・割引</strong>でご案内しております。
-    </p>
-
-    <p class="fee-note">
-        ※ 対象物件・条件があります。詳しくはお気軽にお問い合わせください。
-    </p>
-
- <p class="fee-note">
-        ※ 物件のURLを、教えてください。
-    </p>
-
-            <a href="https://forms.gle/HyXmBgncGQmBEbbC8"
-           class="btn">
-
-            仲介料見積もりはこちら
-
-        </a>
-
-<br>
-        <br>
-        <br>
-        <br>
-
-<h2 style="text-align:center;">
-    どうして、仲介手数料をお得にできるの？
-</h2>
-
-<p style="text-align:center;">
-    仲介手数料をお得にするために、サービスの質を落としているわけではありません。
-</p>
-
-<p style="text-align:center;">
-    従来の不動産会社とは、利益の作り方そのものが違います。
-</p>
-<div style="width:fit-content; margin:0 auto;">
-
-    <p style="text-align:left;">
-        ① 両手仲介に依存しない
-    </p>
-
-    <p style="text-align:left;">
-        ② 片手仲介でも成り立つビジネスモデル
-    </p>
-
-    <p style="text-align:left;">
-        ③ 広告宣伝費を50％削減
-    </p>
-
-    <p style="text-align:left;">
-        ④ 業務のDX化・テレワークの導入
-    </p>
-
-    <p style="text-align:left;">
-        ⑤ 1階の路面店を持たない
-    </p>
-
-    <p style="text-align:left;">
-        ⑥ 固定費を抑えるエージェント制の採用
-    </p>
-
- <p style="text-align:left; color:#cc0000;">
-    ⑦ 仲介手数料の割引は、会社の承認が必要
-</p>
-
-</div>
-
-<div style="text-align: center; font-size: 24px; font-weight: bold; margin: 30px 0 20px;">
-    各種法的ガイドライン
-</div>
-        <p class="hero-note">
-※本インスペクションは、宅地建物取引業法に基づく「建物状況調査」ではありません。<br>
-※当方のインスペクションは簡易的なチェックであり、劣化事象等の見落としがあった場合でも、その責任を一切負いません。<br> 
-※インスペクションは、全ての物件を行うものではありせん。1物件に対する、購入の意思表示が条件です。<br> 
-※そして、当方のインスペクションは、お客様への「好意」として行っています。無料のため、業務ではございません。<br> 
-※責任を伴う詳細な調査をご希望のお客様は、有料のインスペクションをご利用ください。
-        </p>
-        
+  <footer class="site-footer">
+    <div class="content-width footer-inner">
+      <a class="footer-brand" href="index.html">お家.com</a>
+      <nav class="footer-menu" aria-label="フッターメニュー">
+        <a href="#service">サービス</a>
+        <a href="#inspection">住宅診断</a>
+        <a href="#fee">仲介手数料</a>
+        <a href="service.html">サービス詳細</a>
+        <a href="idea.html">理念</a>
+        <a href="voice.html">お客様の声</a>
+        <a href="company.html">会社概要</a>
+        <a href="https://forms.gle/HyXmBgncGQmBEbbC8" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+      </nav>
+      <p class="copyright">© 2026 お家.com All Rights Reserved.</p>
     </div>
+  </footer>
 
-</section>
+  <script>
+    (function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.global-menu');
+      if (!toggle || !menu) return;
 
-<!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
+      toggle.addEventListener('click', function () {
+        const isOpen = menu.classList.toggle('is-open');
+        toggle.classList.toggle('is-open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+      });
 
-<footer>
-
-    <div class="container">
-
-        <p>
-
-            © 2026 お家.com All Rights Reserved.
-
-        </p>
-
-    </div>
-
-</footer>
-
-<!-- ========================================= -->
-<!-- JavaScript -->
-<!-- ========================================= -->
-
-<script>
-
-const toggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-
-toggle.addEventListener("click", () => {
-
-    menu.classList.toggle("active");
-
-});
-
-</script>
-
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          menu.classList.remove('is-open');
+          toggle.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.setAttribute('aria-label', 'メニューを開く');
+        });
+      });
+    })();
+  </script>
 </body>
-
 </html>
