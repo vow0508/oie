@@ -885,7 +885,28 @@ header {
         box-shadow: none !important;
     }
 
-  
+  .top-image-wrap {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.top-image-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.image-cta {
+  position: absolute;
+  left: 8%;
+  top: 24.1%;
+  width: 84%;
+  height: 4.4%;
+  display: block;
+  z-index: 5;
+}
  }
 
  
