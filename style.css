@@ -52,7 +52,7 @@ a { color: inherit; }
   background: transparent;
   cursor: pointer;
 }
-.menu-toggle span { display: block; height: 2px; margin: 5px 0; background: var(--green); }
+.menu-toggle span { display: block; flex: 0 0 24px; width: 24px; height: 2px; margin: 3px 0; background: var(--green); }
 .hero-promo { width: 100%; position: relative; line-height: 0; overflow: hidden; }
 .hero-promo-image { display: block; width: 100%; height: auto; border-radius: 0; }
 .hero-promo-cta {
@@ -228,8 +228,8 @@ header > a:first-child { display: inline-flex; align-items: center; flex: 0 0 au
 header .logo { display: block; width: 72px !important; max-width: 72px !important; max-height: 52px; height: auto !important; object-fit: contain; }
 header .menu-toggle {
   display: none; margin-left: auto; width: 46px; height: 42px; padding: 0;
-  align-items: center; justify-content: center; border: 1px solid #31534b;
-  border-radius: 3px; color: #31534b; background: transparent;
+  align-items: center; justify-content: center; border: 0;
+  border-radius: 0; color: #31534b; background: transparent;
   font-size: 24px; line-height: 1; cursor: pointer;
 }
 header .menu { display: flex; align-items: center; justify-content: flex-end; gap: clamp(12px, 2vw, 26px); margin-left: auto; }
@@ -249,4 +249,23 @@ header .menu a:hover { color: #8a6c3e; }
   header .menu.active { display: flex; }
   header .menu a { padding: 12px 4px; border-bottom: 1px solid #e2e2da; font-size: 14px; }
   header .menu a:last-child { border-bottom: 0; }
+}
+
+@media (max-width: 768px) {
+  .site-header .menu-toggle {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    padding: 8px 4px !important;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .site-header .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    flex: 0 0 2px;
+    margin: 0;
+    background: #31534b;
+  }
 }
