@@ -1,4 +1,5 @@
-!DOCTYPE html>
+<!DOCTYPE html>
+>
 
 <html lang="ja">
 
@@ -55,11 +56,9 @@
              class="logo">
     </a>
 
-    <div class="menu-toggle">
-        ☰
-    </div>
+    <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">☰</button>
 
-    <nav class="menu">
+    <nav class="menu" id="site-menu" aria-label="メインナビゲーション">
 
         <a href="index.html">HOME</a>
         <a href="service.html">SERVICE</a>
@@ -296,14 +295,33 @@
  
 
 <script>
-
-const toggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
-
-toggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-});
-
+(function () {
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu");
+  if (!toggle || !menu) return;
+  toggle.addEventListener("click", function () {
+    const isOpen = menu.classList.toggle("active");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "メニューを閉じる" : "メニューを開く");
+    toggle.textContent = isOpen ? "×" : "☰";
+  });
+  menu.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      menu.classList.remove("active");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "メニューを開く");
+      toggle.textContent = "☰";
+    });
+  });
+  document.addEventListener("click", function (event) {
+    if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+      menu.classList.remove("active");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "メニューを開く");
+      toggle.textContent = "☰";
+    }
+  });
+})();
 </script>
 
 </body>
