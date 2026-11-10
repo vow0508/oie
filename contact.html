@@ -1,1 +1,78 @@
-
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="お家.comへのお問い合わせ。仲介手数料のお見積もり、住宅診断などのご相談はこちら。">
+<title>お問い合わせ｜お家.com</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">お家.com</a>
+  <a class="back-link" href="index.html">トップページへ戻る</a>
+</header>
+<main class="contact-main">
+  <section class="intro">
+    <p class="eyebrow">— CONTACT</p>
+    <h1>気になることを、<br>ひとつずつ。</h1>
+    <p>不動産仲介やインスペクションについて、ご検討中の内容や確かめたいことをお聞かせください。</p>
+  </section>
+  <section class="information">
+    <p class="eyebrow">— INFORMATION</p>
+    <h2>ご相談の前に</h2>
+    <p>正式なお問い合わせ窓口です。物件URLが分かる場合は、あわせてお知らせください。仲介手数料は物件ごとに条件を確認してお見積もりします。</p>
+  </section>
+  <section class="form-section">
+    <p class="eyebrow">— YOUR INQUIRY</p>
+    <h2>相談内容を整理する</h2>
+    <p>個人のお客様・企業・店舗、いずれのご相談もこちらから。</p>
+    <blockquote>書くことで、見えてくる。<br><span>まだ具体的に決まっていなくても、今気になっていることから。</span></blockquote>
+    <form action="https://formspree.io/f/mppdazer" method="POST">
+      <input type="hidden" name="_subject" value="お家.com｜お問い合わせ">
+      <div class="field">
+        <label for="name">お名前 <span class="optional">任意</span></label>
+        <input id="name" name="お名前" type="text" autocomplete="name" placeholder="お名前をご入力ください">
+      </div>
+      <div class="field">
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="example@example.com" required>
+      </div>
+      <div class="field">
+        <label for="phone">電話番号 <span class="optional">任意</span></label>
+        <input id="phone" name="電話番号" type="tel" autocomplete="tel" placeholder="電話番号をご入力ください">
+      </div>
+      <div class="field">
+        <label for="inquiry">お問い合わせ項目 <span class="required">必須</span></label>
+        <select id="inquiry" name="お問い合わせ項目" required>
+          <option value="" selected disabled>項目をお選びください</option>
+          <option value="ご相談・ご質問">ご相談・ご質問</option>
+          <option value="仲介手数料見積り">仲介手数料見積り</option>
+          <option value="欠陥住宅チェックリスト">欠陥住宅チェックリスト</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="property-url">物件URL <span class="optional">任意</span></label>
+        <input id="property-url" name="物件URL" type="url" placeholder="物件ページのURLをご入力ください">
+        <p class="field-note">仲介手数料のお見積もりをご希望の場合は、物件URLをお知らせください。</p>
+      </div>
+      <div class="field">
+        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+        <textarea id="message" name="お問い合わせ内容" rows="6" placeholder="ご相談内容をご入力ください" required></textarea>
+      </div>
+      <p class="privacy-note">ご入力いただいた情報は、お問い合わせへの対応に使用します。</p>
+      <button class="submit-button" type="submit">相談内容を送信する <span aria-hidden="true">→</span></button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-brand">お家.com</div>
+  <p>住まい探しと建物の確認を、専門家の視点でサポート。</p>
+  <nav class="footer-links">
+    <a href="service.html">不動産仲介</a><a href="idea.html">理念</a><a href="voice.html">お客様の声</a><a href="company.html">会社概要</a>
+  </nav>
+  <a class="footer-contact" href="index.html">トップページへ戻る</a>
+  <small>© 2026 お家.com All Rights Reserved.</small>
+</footer>
+</body>
+</html>
