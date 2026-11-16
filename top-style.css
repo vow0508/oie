@@ -222,10 +222,13 @@ a { color: inherit; }
   .menu-toggle { display: none; }
   .menu { display: flex; position: static; width: auto; padding: 0; border: 0; box-shadow: none; background: transparent; gap: 22px; }
   .menu a { border: 0; font-size: 14.67px; }
-  .hero-copy, .hero-caption, .section-heading, .service-item, .service-cta, .approach-item, .approach-note, .contact-band, .inspection-copy, .inspection-disclaimer, .fee-reasons {
-    padding-left: max(28px, calc((100% - 760px) / 2));
-    padding-right: max(28px, calc((100% - 760px) / 2));
-  }
+　.hero-copy, .hero-caption, .section-heading, .service-item,
+.service-cta, .approach-item, .contact-band,
+.inspection-copy, .inspection-disclaimer {
+  padding-left: max(28px, calc((100% - 760px) / 2));
+  padding-right: max(28px, calc((100% - 760px) / 2));
+}
+
   .hero-copy { padding-top: 60px; padding-bottom: 42px; }
   .hero h1 { font-size: 50.67px; }
   .hero-photo img { max-height: 620px; object-fit: cover; object-position: center 42%; }
